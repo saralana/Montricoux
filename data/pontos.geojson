@@ -1,0 +1,235 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.6167, 44.0754]
+      },
+      "properties": {
+        "id": 1,
+        "title": "Bienvenue à Montricoux",
+        "title-en": "Welcome to Montricoux",
+        "author": "par Astrid Torrao et Michel Jannin",
+        "author-en": "by Astrid Torrao and Michel Jannin",
+        "description": "Astrid Torrao est hôte et artiste plasticienne. Michel Jannin est conseiller municipal à Montricoux. Ils livrent un regard sensible sur leur village entre hospitalité, partage et transmission.",
+        "description-en": "Astrid Torrao is a host and visual artist. Michel Jannin is a municipal councilor in Montricoux. Together, they share a sensitive perspective on their village through hospitality, sharing, and transmission.",
+        "audio": "assets/audio/1_audio.mp3",
+        "subtitle": "assets/subtitles/1.srt",
+        "icon": "assets/icons/1.png",
+        "image": "assets/images/1.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.61735, 44.07565]
+      },
+      "properties": {
+        "id": 2,
+        "title": "Le Musée Marcel-Lenoir",
+        "title-en": "The Marcel-Lenoir Museum",
+        "author": "par Marie Ange Namy",
+        "author-en": "by Marie Ange Namy",
+        "description": "Marie-Ange Namy est collectionneuse et historienne de l’art. Elle évoque l’histoire de la relation passionnée de sa famille pour l’œuvre et la personne du peintre Marcel-Lenoir.",
+        "description-en": "Marie-Ange Namy is an art collector and art historian. She recounts the passionate relationship her family developed with both the work and the life of the painter Marcel-Lenoir.",
+        "audio": "assets/audio/2_audio.mp3",
+        "subtitle": "assets/subtitles/2.srt",
+        "icon": "assets/icons/2.png",
+        "image": "assets/images/2.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.61785, 44.07545]
+      },
+      "properties": {
+        "id": 3,
+        "title": "Création contemporaine",
+        "title-en": "Contemporary Creation",
+        "author": "par RV Larbre",
+        "author-en": "by RV Larbre",
+        "description": "Hervé Larbre est artiste sculpteur ferronnier. Il parle de son expérience sensible de la matière et son rapport engagé à l’art.",
+        "description-en": "Hervé Larbre is a sculptor and metalworker. He speaks about his sensitive relationship with materials and his deeply committed connection to art.",
+        "audio": "assets/audio/3_audio.mp3",
+        "subtitle": "assets/subtitles/3.srt",
+        "icon": "assets/icons/3.png",
+        "image": "assets/images/3.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.6196, 44.0755]
+      },
+      "properties": {
+        "id": 4,
+        "title": "Point de vue de collectionneur",
+        "title-en": "A Collector’s Perspective",
+        "author": "avec Diego Lara",
+        "author-en": "with Diego Lara",
+        "description": "Diégo Lara est un collectionneur passionné et autodidacte. Il raconte son amour pour les peintres de Montricoux et sa volonté de partager ses trésors avec le public.",
+        "description-en": "Diégo Lara is a passionate self-taught collector. He shares his love for the painters of Montricoux and his desire to share his treasures with the public.",
+        "audio": "assets/audio/4_audio.mp3",
+        "subtitle": "assets/subtitles/4.srt",
+        "icon": "assets/icons/4.png",
+        "image": "assets/images/4.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.6201, 44.0755]
+      },
+      "properties": {
+        "id": 5,
+        "title": "Le Sacré-cœur, lieu de connaissance et d’apprentissage",
+        "title-en": "The Sacred Heart, a Place of Knowledge and Learning",
+        "author": "par Isabelle Fléouter",
+        "author-en": "by Isabelle Fléouter",
+        "description": "Isabelle Fléouter est médiathécaire et responsable du centre culturel intercommunal installé dans les murs du Sacré-Cœur, école d’art chrétien fondée par le peintre Louis Cazottes à la fin du XIX e siècle.",
+        "description-en": "Isabelle Fléouter is a librarian and director of the intercommunal cultural center housed within the Sacred Heart building, a Christian art school founded by the painter Louis Cazottes at the end of the 19th century.",
+        "audio": "assets/audio/5_audio.mp3",
+        "subtitle": "assets/subtitles/5.srt",
+        "icon": "assets/icons/5.png",
+        "image": "assets/images/5.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.6183, 44.0752]
+      },
+      "properties": {
+        "id": 6,
+        "title": "Découverte et restauration de la fileuse",
+        "title-en": "Discovery and Restoration of the Spinner’s House",
+        "author": "avec Jean-Claude Herraïz",
+        "author-en": "with Jean-Claude Herraïz",
+        "description": "Jean-Claude Herraïz est propriétaire du gîte de la fileuse. Il évoque son attachement au patrimoine à travers la restauration qu’il a fait de cet héritage familial.",
+        "description-en": "Jean-Claude Herraïz owns the Spinner’s House guesthouse. He speaks about his attachment to heritage through the restoration of this family inheritance.",
+        "audio": "assets/audio/6_audio.mp3",
+        "subtitle": "assets/subtitles/6.srt",
+        "icon": "assets/icons/60.png",
+        "image": "assets/images/6.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.61805, 44.0748]
+      },
+      "properties": {
+        "id": 7,
+        "title": "Aménagement du jardin des curés",
+        "title-en": "Development of the Priests’ Garden",
+        "author": "avec Aquilino Torrao",
+        "author-en": "with Aquilino Torrao",
+        "description": "Aquilino Torrao est architecte à Montricoux. Entre conservation et création, il s’attache à restaurer le patrimoine historique dans une approche contemporaine.",
+        "description-en": "Aquilino Torrao is an architect in Montricoux. Balancing preservation and creation, he works to restore historical heritage through a contemporary approach.",
+        "audio": "assets/audio/7_audio.mp3",
+        "subtitle": "assets/subtitles/7.srt",
+        "icon": "assets/icons/7.png",
+        "image": "assets/images/7.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.61984, 44.076138]
+      },
+      "properties": {
+        "id": 8,
+        "title": "Restauration de la tour du Réginet",
+        "title-en": "Restoration of the Réginet Tower",
+        "author": "avec Aquilino Torrao",
+        "author-en": "with Aquilino Torrao",
+        "description": "Aquilino Torrao présente ici la richesse d’une démarche de préservation concertée entre municipalité, service de l’état, architecte et artisan.",
+        "description-en": "Aquilino Torrao presents the richness of a collaborative preservation process involving the municipality, state heritage services, architects, and craftsmen.",
+        "audio": "assets/audio/8_audio.mp3",
+        "subtitle": "assets/subtitles/8.srt",
+        "icon": "assets/icons/8.png",
+        "image": "assets/images/8.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.6185, 44.0735]
+      },
+      "properties": {
+        "id": 9,
+        "title": "Le Moulin de Montricoux",
+        "title-en": "The Montricoux Mill",
+        "author": "par Thierry Faucher",
+        "author-en": "by Thierry Faucher",
+        "description": "Thierry Faucher est propriétaire du moulin de Montricoux. Il est animé par la volonté de faire perdurer un patrimoine commun et familial autour d’une production locale de qualité.",
+        "description-en": "Thierry Faucher owns the Montricoux mill. He is driven by the desire to preserve a shared family heritage through high-quality local production.",
+        "audio": "assets/audio/9_audio.mp3",
+        "subtitle": "assets/subtitles/9.srt",
+        "icon": "assets/icons/9.png",
+        "image": "assets/images/9.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.619, 44.0744]
+      },
+      "properties": {
+        "id": 10,
+        "title": "Les briqueteries de Montricoux",
+        "title-en": "The Brickworks of Montricoux",
+        "author": "par Diego Lara",
+        "author-en": "by Diego Lara",
+        "description": "Diégo Lara partage ses connaissances sur la production locale de brique et les différentes briqueteries autour de Montricoux.",
+        "description-en": "Diégo Lara shares his knowledge about local brick production and the various brickworks around Montricoux.",
+        "audio": "assets/audio/10_audio.mp3",
+        "subtitle": "assets/subtitles/10.srt",
+        "icon": "assets/icons/10.png",
+        "image": "assets/images/10.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.6185, 44.0755]
+      },
+      "properties": {
+        "id": 11,
+        "title": "Le regard de l’architecte des Bâtiments de France",
+        "title-en": "The Perspective of the Architect of Historic Buildings",
+        "author": "par Isabelle Van Mastrigt",
+        "author-en": "by Isabelle Van Mastrigt",
+        "description": "Isabelle Van Mastrigt est Architecte des Bâtiments de France. Elle nous livre sa lecture historique et patrimoniale du village de Montricoux.",
+        "description-en": "Isabelle Van Mastrigt is an Architect of Historic Buildings in France. She shares her historical and heritage-based interpretation of the village of Montricoux.",
+        "audio": "assets/audio/11_audio.mp3",
+        "subtitle": "assets/subtitles/11.srt",
+        "icon": "assets/icons/110.png",
+        "image": "assets/images/11.png"
+      }
+    }
+  ]
+}

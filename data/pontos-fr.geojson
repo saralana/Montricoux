@@ -1,0 +1,204 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.6167, 44.0754]
+      },
+      "properties": {
+        "id": 1,
+        "title": "Bienvenue à Montricoux",
+        "author": "par Astrid Torrao et Michel Jannin",
+        "description": "Astrid Torrao est hôte et artiste plasticienne. Michel Jannin est conseiller municipal à Montricoux. Ils livrent un regard sensible sur leur village entre hospitalité, partage et transmission.",
+        "audio": "assets/audio/1_audio.mp3",
+        "subtitle": "assets/subtitles/1.srt",
+        "icon": "assets/icons/1.png",
+        "image": "assets/images/1.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.61735, 44.07565]
+      },
+      "properties": {
+        "id": 2,
+        "title": "Le Musée Marcel-Lenoir",
+        "author": "par Marie Ange Namy",
+        "description": "Marie-Ange Namy est collectionneuse et historienne de l’art. Elle évoque l’histoire de la relation passionnée de sa famille pour l’œuvre et la personne du peintre Marcel-Lenoir.",
+        "audio": "assets/audio/2_audio.mp3",
+        "subtitle": "assets/subtitles/2.srt",
+        "icon": "assets/icons/2.png",
+        "image": "assets/images/2.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.61785, 44.07545]
+      },
+      "properties": {
+        "id": 3,
+        "title": "Création contemporaine",
+        "author": "par RV Larbre",
+        "description": "Hervé Larbre est artiste sculpteur ferronnier. Il parle de son expérience sensible de la matière et son rapport engagé à l’art.",
+        "audio": "assets/audio/3_audio.mp3",
+        "subtitle": "assets/subtitles/3.srt",
+        "icon": "assets/icons/3.png",
+        "image": "assets/images/3.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.6196, 44.0755]
+      },
+      "properties": {
+        "id": 4,
+        "title": "Point de vue de collectionneur",
+        "author": "avec Diego Lara",
+        "description": "Diégo Lara est un collectionneur passionné et autodidacte. Il raconte son amour pour les peintres de Montricoux et sa volonté de partager ses trésors avec le public.",
+        "audio": "assets/audio/4_audio.mp3",
+        "subtitle": "assets/subtitles/4.srt",
+        "icon": "assets/icons/4.png",
+        "image": "assets/images/4.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.6201, 44.0755]
+      },
+      "properties": {
+        "id": 5,
+        "title": "Le Sacré-cœur, lieu de connaissance et d’apprentissage",
+        "author": "par Isabelle Fléouter",
+        "description": "Isabelle Fléouter est médiathécaire et responsable du centre culturel intercommunal installé dans les murs du Sacré-Cœur, école d’art chrétien fondée par le peintre Louis Cazottes à la fin du XIX e siècle.",
+        "audio": "assets/audio/5_audio.mp3",
+        "subtitle": "assets/subtitles/5.srt",
+        "icon": "assets/icons/5.png",
+        "image": "assets/images/5.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.6183, 44.0752]
+      },
+      "properties": {
+        "id": 6,
+        "title": "Découverte et restauration de la fileuse",
+        "author": "avec Jean-Claude Herraïz",
+        "description": "Jean-Claude Herraïz est propriétaire du gîte de la fileuse. Il évoque son attachement au patrimoine à travers la restauration qu’il a fait de cet héritage familial.",
+        "audio": "assets/audio/6_audio.mp3",
+        "subtitle": "assets/subtitles/6.srt",
+        "icon": "assets/icons/60.png",
+        "image": "assets/images/6.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.61805, 44.0748]
+      },
+      "properties": {
+        "id": 7,
+        "title": "Aménagement du jardin des curés",
+        "author": "avec Aquilino Torrao",
+        "description": "Aquilino Torrao est architecte à Montricoux. Entre conservation et création, il s’attache à restaurer le patrimoine historique dans une approche contemporaine.",
+        "audio": "assets/audio/7_audio.mp3",
+        "subtitle": "assets/subtitles/7.srt",
+        "icon": "assets/icons/7.png",
+        "image": "assets/images/7.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.61984, 44.076138]
+      },
+      "properties": {
+        "id": 8,
+        "title": "Restauration de la tour du Réginet",
+        "author": "avec Aquilino Torrao",
+        "description": "Aquilino Torrao présente ici la richesse d’une démarche de préservation concertée entre municipalité, service de l’état, architecte et artisan.",
+        "audio": "assets/audio/8_audio.mp3",
+        "subtitle": "assets/subtitles/8.srt",
+        "icon": "assets/icons/8.png",
+        "image": "assets/images/8.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.6185, 44.0735]
+      },
+      "properties": {
+        "id": 9,
+        "title": "Le Moulin de Montricoux",
+        "author": "par Thierry Faucher",
+        "description": "Thierry Faucher est propriétaire du moulin de Montricoux. Il est animé par la volonté de faire perdurer un patrimoine commun et familial autour d’une production locale de qualité.",
+        "audio": "assets/audio/9_audio.mp3",
+        "subtitle": "assets/subtitles/9.srt",
+        "icon": "assets/icons/9.png",
+        "image": "assets/images/9.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.619, 44.0744]
+      },
+      "properties": {
+        "id": 10,
+        "title": "Les briqueteries de Montricoux",
+        "author": "par Diego Lara",
+        "description": "Diégo Lara partage ses connaissances sur la production locale de brique et les différentes briqueteries autour de Montricoux.",
+        "audio": "assets/audio/10_audio.mp3",
+        "subtitle": "assets/subtitles/10.srt",
+        "icon": "assets/icons/10.png",
+        "image": "assets/images/10.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.6185, 44.0755]
+      },
+      "properties": {
+        "id": 11,
+        "title": "Le regard de l’architecte des Bâtiments de France",
+        "author": "par Isabelle Van Mastrigt",
+        "description": "Isabelle Van Mastrigt est Architecte des Bâtiments de France. Elle nous livre sa lecture historique et patrimoniale du village de Montricoux.",
+        "audio": "assets/audio/11_audio.mp3",
+        "subtitle": "assets/subtitles/11.srt",
+        "icon": "assets/icons/110.png",
+        "image": "assets/images/11.png"
+      }
+    }
+
+  ]
+}

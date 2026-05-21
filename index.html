@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>MONTRICOUX</title>
+  <!-- MAPBOX -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- FONTS AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+
+<body>
+
+  <!-- MAP -->
+  <div id="map"></div>
+
+  <!-- LOGO -->
+  <div id="logo-gradient"></div>
+    <div class="logo-wrap">
+        <button id="logo-button" class="logo"></button>
+    </div>
+
+<!-- SIDEBAR -->
+
+<div id="sidebar">
+
+  <!-- CLOSE -->
+
+  <button id="close-sidebar">
+    ×
+  </button>
+
+
+  <!-- CONTENT -->
+  <div class="sidebar-content">
+
+    <!-- INTRO -->
+    <p class="sidebar-intro">
+        Ce parcours vous propose de découvrir le village de Montricoux et son patrimoine artistique et architectural. Au fil d’un récit
+        incarné par des habitants, des artistes et des acteurs culturels, laissez-vous guider dans les rues de ce village médiéval.
+        Chargez la cartographie au format numérique en flashant le QR code à la station A (La bascule) et déplacez-vous dans le
+        village à la rencontre des capsules sonores accessibles d’un clic.
+        <br><br>
+        <b>Distance </b>: env. 2 km
+        <br>
+        <b>Durée </b>: env. 1/2h de marche, 1h avec les points d’écoute
+    </p>
+
+    <!-- LINKS -->
+    <div class="sidebar-links">
+
+
+    <!-- FICHE TECHNIQUE -->
+        <div class="accordion">
+            <button class="accordion-button">
+            Crédits
+            <span>+</span>
+            </button>
+            <div class="accordion-content">
+                <p>
+                
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="sidebar-footer">
+
+      <!-- LOGOS 
+      <div class="sidebar-logos">
+        <img src="assets/logo-acx.png">
+        <img src="assets/logo-ufpr.png">
+        <img src="assets/logo-cnpq.png">
+      </div>-->
+
+
+      <!-- LANGUAGES -->
+
+        <div class="sidebar-languages">
+            <button
+                class="active"
+                onclick="window.location.href='index.html'">
+                FR
+            </button>
+
+            <button
+                onclick="window.location.href='en.html'">
+                EN
+            </button>
+        </div>
+    </div>
+  </div>
+</div>
+
+  <!-- PLAYER PANEL -->
+ <div id="player-gradient">
+    <div id="player-panel">
+        <div id="player-layout">
+            <div class="meta">
+                <h3 id="player-title"></h3>
+                <h4 id="player-author"></h4>
+                <p id="player-description"></p>
+            </div>
+            <!-- player -->
+            <div class="player-column">
+                <div class="player" role="region" aria-label="Audio player">
+                    <audio id="audio" preload="metadata"></audio>
+                    <div class="controls">
+                        <button id="play" class="btn" aria-label="Play/Pause">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="mute" class="btn" aria-label="Mute/Unmute">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                        <div class="volume-wrap">
+                            <input
+                                id="volume"
+                                class="volume"
+                                type="range"
+                                min="0"
+                                max="1"
+                                step="0.01"
+                                value="1"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- timeline -->
+                    <div class="seek-wrap">
+                        <input
+                            id="seek"
+                            class="seek"
+                            type="range"
+                            min="0"
+                            max="100"
+                            step="0.1"
+                            value="0"
+                        >
+                    </div>
+                    <!-- time -->
+                    <div class="time small">
+                        <span id="current">0:00</span>
+                        <span>/</span>
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>   
+                <!-- subtitles -->
+                <div id="subtitle" class="subtitle"></div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+  <!-- MAPBOX -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
+
+  <!-- PLAYER -->
+  <script src="player.js"></script>
+  <script src="subtitles.js"></script>
+  <!-- MAIN -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
