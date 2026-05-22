@@ -178,6 +178,10 @@ function updateMarkerScale(){
     useImages
     ? `url(${marker.dataset.image})`
     : `url(${marker.dataset.icon})`
+
+    marker.classList.toggle('marker-image', useImages)
+    marker.classList.toggle('marker-icon', !useImages)
+
     const isActive =
     marker.classList.contains('active-marker')
 
@@ -222,7 +226,7 @@ map.on('load',async()=>{
     const el =
     document.createElement('div')
 
-    el.className = 'marker'
+    el.className = 'marker marker-icon'
 
     const inner =
     document.createElement('div')
