@@ -146,8 +146,8 @@ closeSidebar.addEventListener('click',()=>{
 
 function updateMarkerScale(){
 
-  const zoom =
-  map.getZoom()
+  const zoom = map.getZoom()
+  const useImages = zoom >= 19.5
 
   let scale
 
@@ -174,32 +174,16 @@ function updateMarkerScale(){
   .querySelectorAll('.marker-inner')
   .forEach(marker => {
 
+    marker.style.backgroundImage =
+    useImages
+    ? `url(${marker.dataset.image})`
+    : `url(${marker.dataset.icon})`
     const isActive =
     marker.classList.contains('active-marker')
 
-    // RESET IMAGE WHEN ZOOM OUT
-
-   if(zoom < 17){
-
-      marker.style.backgroundImage =
-      `url(${marker.dataset.icon})`
-
-    }
-
-    else{
-
-      if(marker.classList.contains('active-marker')){
-
-        marker.style.backgroundImage =
-        `url(${marker.dataset.image})`
-
-      }
-
-    }
-
     const finalScale =
     isActive
-    ? scale * 2.2
+    ? scale * 1.05
     : scale
 
     marker.style.transform =
@@ -295,8 +279,8 @@ map.on('load',async()=>{
 
         marker.classList.remove('active-marker')
 
-        marker.style.backgroundImage =
-        `url(${marker.dataset.icon})`
+        /*marker.style.backgroundImage =
+        `url(${marker.dataset.icon})`*/
 
       })
 
@@ -321,8 +305,8 @@ map.on('load',async()=>{
 
           marker.classList.remove('active-marker')
 
-          marker.style.backgroundImage =
-          `url(${marker.dataset.icon})`
+          /*marker.style.backgroundImage =
+          `url(${marker.dataset.icon})`*/
 
         })
 
@@ -330,8 +314,8 @@ map.on('load',async()=>{
 
         inner.classList.add('active-marker')
 
-        inner.style.backgroundImage =
-        `url(${props.image})`
+        /*inner.style.backgroundImage =
+        `url(${props.image})`*/
 
         // UPDATE SCALE
 
