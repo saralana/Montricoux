@@ -150,7 +150,7 @@ closeSidebar.addEventListener('click',()=>{
 function updateMarkerScale(){
 
   const zoom = map.getZoom()
-  const useImages = zoom >= 19.5
+  const useImages = zoom >= 18
 
   let scale
 
@@ -163,7 +163,7 @@ function updateMarkerScale(){
   else if(zoom <= 20){
 
     scale =
-    1 + ((zoom - 15) * 0.45)
+    1 + ((zoom - 15) * 0.2)
 
   }
 
@@ -295,7 +295,7 @@ map.on('load',async()=>{
 
       map.flyTo({
         center:feature.geometry.coordinates,
-        zoom:20,
+        zoom:19,
         duration:2000,
         essential:true
       })
