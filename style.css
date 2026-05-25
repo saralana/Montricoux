@@ -61,12 +61,20 @@ h4{
 }
 
 @media (max-width:768px){
+ p{
+    font-size:0.8rem !important;
+    line-height:1.1;
+  }
 
-h3{
-  font-size:1.4rem !important;
-  line-height:1.1;
-}
+  h3{
+    font-size:1rem !important;
+    line-height:1.1;
+  }
 
+  h4{
+    font-size:0.7rem !important;
+    line-height:1.1;
+  }
 }
 
 /* MAP */
@@ -148,6 +156,51 @@ h3{
     font-size:0.95rem;
     line-height:1.7;
     opacity:0.8;
+}
+
+#description-toggle{
+display:none;
+}
+
+
+@media (max-width:768px){
+
+  .description-accordion{
+    width:100%;
+  }
+
+  #player-description{
+
+    max-height:1.5em;
+    overflow:hidden;
+
+    transition:max-height .35s ease;
+
+    position:relative;
+  }
+
+  #player-description.expanded{
+    max-height:500px;
+  }
+
+  #description-toggle{
+    display:block;
+    
+    margin-top:10px;
+
+    background:none;
+    border:none;
+
+    color:var(--marron);
+
+    font-size:.8rem;
+    letter-spacing:.08em;
+
+    opacity:.7;
+
+    cursor:pointer;
+  }
+
 }
 
 /* PANEL ACTIVE */
@@ -404,7 +457,7 @@ filter:drop-shadow(0 0 30px var(--marron-light));
 
   #player-author{
       font-size:1rem;
-      margin-bottom:1.5rem;
+      margin-bottom:0.5rem;
   }
 
   #player-description{
@@ -523,7 +576,7 @@ LOGO GRADIENT
   left: 0;
   width: 70vw;
   height: 20vw;
-  z-index: 900;
+  z-index: 700;
   pointer-events: none;
   background: radial-gradient(
     ellipse at 22vh 13vh,
@@ -725,8 +778,10 @@ SIDEBAR
     margin-bottom: 40px;
   }
   .sidebar-intro {
-    font-size: 16px;
-    max-width: 100%;
+    font-size: 16px !important;
+    max-width: 80vw;
+    margin: 8vw;
+    text-align: justify !important;
   }
   .sidebar-link {
     font-size: 16px;
@@ -761,7 +816,7 @@ SIDEBAR
 #close-sidebar {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 40px;
   background: none;
   border: none;
   font-size: 32px;
@@ -779,6 +834,15 @@ SIDEBAR
 
 .mapboxgl-ctrl-logo {
     display:none !important;
+}
+
+@media (max-width: 768px) {
+.mapboxgl-ctrl-zoom-in {
+    display: none !important;
+  }
+  .mapboxgl-ctrl-zoom-out {
+    display: none !important;
+  }
 }
 
 /* REMOVE FUNDO PADRÃO */
@@ -816,6 +880,7 @@ display:none!important;
 .mapboxgl-ctrl-top-right{
     top:5vh!important;
     right:2vw!important;
+    z-index: 800;
 }
 
 /* ESCONDE SVG INTERNO DO MAPBOX */
@@ -848,7 +913,7 @@ LANGUAGE SWITCHER
     top: calc(7vh + 160px);
     right: 2.5vw;
 
-    z-index:1000;
+    z-index:800;
 
     display:flex;
     flex-direction:column;
@@ -907,10 +972,18 @@ LANGUAGE SWITCHER
 /* mobile */
 
 @media (max-width:768px){
+  .lang-button,
+  .lang-active{
+    width:30px;
+    height:30px;
+  }
 
   .language-switcher{
-      top:calc(5vh + 150px);
+      top:calc(5vh + 65px);
       right:4vw;
   }
+  .mapboxgl-ctrl button{
+    width:30px!important;
+    height:30px!important
 
 }

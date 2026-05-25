@@ -68,7 +68,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [1.6196, 44.0755]
+        "coordinates": [1.6189, 44.0758]
       },
       "properties": {
         "id": 4,
@@ -152,7 +152,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [1.61984, 44.076138]
+        "coordinates": [1.6195, 44.07612]
       },
       "properties": {
         "id": 8,

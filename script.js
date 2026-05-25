@@ -122,6 +122,9 @@ document.getElementById('player-description')
 const playerAuthor =
 document.getElementById('player-author')
 
+const descriptionToggle =
+document.getElementById('description-toggle')
+
 // ========================================
 // SIDEBAR
 // ========================================
@@ -345,6 +348,10 @@ map.on('load',async()=>{
 
       playerDescription.textContent =
       t('description')
+      playerDescription.classList.remove('expanded')
+
+      descriptionToggle.textContent =
+      '+'
 
       playerAuthor.textContent =
       t('author')
@@ -364,6 +371,7 @@ map.on('load',async()=>{
     })
 
   })
+
 
   // ========================================
   // MAP CLICK
@@ -400,5 +408,24 @@ accordions.forEach((accordion)=>{
     accordion.classList.toggle('active')
 
   })
+
+})
+
+
+// ========================================
+// DESCRIPTION ACCORDION
+// ========================================
+
+descriptionToggle.addEventListener('click',()=>{
+
+  playerDescription.classList.toggle('expanded')
+
+  const expanded =
+  playerDescription.classList.contains('expanded')
+
+  descriptionToggle.textContent =
+  expanded
+    ? '−'
+    : '+'
 
 })
