@@ -163,7 +163,7 @@ function updateMarkerScale(){
   else if(zoom <= 20){
 
     scale =
-    1 + ((zoom - 15) * 0.2)
+    1 + ((zoom - 15) * 0.15)
 
   }
 

@@ -297,7 +297,7 @@ filter:drop-shadow(0 0 30px var(--marron-light));
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
-  height: 6px;
+  height: 5px;
   border-radius: 8px;
   background: var(--marron-light);
   outline: none;
@@ -441,7 +441,7 @@ filter:drop-shadow(0 0 30px var(--marron-light));
   #player-layout{
     flex-direction:column;
     align-items:flex-start;
-    padding:24vw 6vw 4vw 6vw;
+    padding:2vh;
     gap:2vw;
   }
 
@@ -474,14 +474,14 @@ filter:drop-shadow(0 0 30px var(--marron-light));
   .player{
     width:100%;
     padding-bottom: 5px;
-    gap:4vw;
+    gap:2vw;
     display:flex;
     align-items:center;
     flex-wrap:nowrap;
   }
 
   .controls{
-   gap:4vw;
+   gap:2vw;
   }
 
   .volume-wrap{
@@ -498,7 +498,7 @@ filter:drop-shadow(0 0 30px var(--marron-light));
   .time{
     width:auto;
     justify-content:flex-end;
-    font-size:0.9rem;
+    font-size:0.7rem;
     white-space:nowrap;
     flex-shrink:0;
     order:3;
@@ -523,9 +523,9 @@ filter:drop-shadow(0 0 30px var(--marron-light));
   }
 
   .btn{
-    width:44px;
-    height:44px;
-    font-size:18px;
+    width: 30px;
+    height: 30px;
+    font-size:15px;
   }
 
 }
@@ -879,9 +879,22 @@ display:none!important;
 }
 
 .mapboxgl-ctrl-top-right{
-    top:5vh!important;
+    top:5vw!important;
     right:2vw!important;
     z-index: 800;
+    margin: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .mapboxgl-ctrl-top-right{
+    top:5vh!important;
+    right:2vh!important;
+    z-index: 800;
+  }
+  .mapboxgl-ctrl-top-right .mapboxgl-ctrl {
+    float: right;
+    margin: 0 0 0 0 !important;
+  }
 }
 
 /* ESCONDE SVG INTERNO DO MAPBOX */
@@ -980,8 +993,8 @@ LANGUAGE SWITCHER
   }
 
   .language-switcher{
-      top:calc(5vh + 65px);
-      right:4vw;
+      top:calc(5vh + 45px);
+      right:2vh;
   }
   .mapboxgl-ctrl button{
     width:30px!important;
