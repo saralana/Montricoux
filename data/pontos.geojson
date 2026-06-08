@@ -8,7 +8,10 @@
         "coordinates": [1.6167, 44.0754]
       },
       "properties": {
-        "id": 1,
+        "id": 1,        
+        "anchor":"bottom",
+        "offsetX": 0,
+        "offsetY": 0,
         "title": "Bienvenue à Montricoux",
         "title-en": "Welcome to Montricoux",
         "author": "par Astrid Torrao et Michel Jannin",
@@ -29,7 +32,10 @@
         "coordinates": [1.61735, 44.07565]
       },
       "properties": {
-        "id": 2,
+        "id": 2,        
+        "anchor":"bottom",
+        "offsetX": 0,
+        "offsetY": 0,
         "title": "Le Musée Marcel-Lenoir",
         "title-en": "The Marcel-Lenoir Museum",
         "author": "par Marie Ange Namy",
@@ -47,10 +53,13 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [1.61785, 44.07545]
+        "coordinates": [1.61792, 44.0753]
       },
       "properties": {
-        "id": 3,
+        "id": 3,        
+        "anchor":"bottom",
+        "offsetX": 0,
+        "offsetY": 0,
         "title": "Création contemporaine",
         "title-en": "Contemporary Creation",
         "author": "par RV Larbre",
@@ -71,7 +80,11 @@
         "coordinates": [1.6189, 44.0758]
       },
       "properties": {
-        "id": 4,
+        "id": 4,        
+        "anchor":"bottom",
+        "offsetX": 0,
+        "offsetY": 0,
+        "imageScale": 0.7,
         "title": "Point de vue de collectionneur",
         "title-en": "A Collector’s Perspective",
         "author": "avec Diego Lara",
@@ -92,7 +105,11 @@
         "coordinates": [1.6201, 44.0755]
       },
       "properties": {
-        "id": 5,
+        "id": 5,        
+        "anchor":"bottom",
+        "offsetX": 0,
+        "offsetY": 0,
+        "imageScale": 2,
         "title": "Le Sacré-cœur, lieu de connaissance et d’apprentissage",
         "title-en": "The Sacred Heart, a Place of Knowledge and Learning",
         "author": "par Isabelle Fléouter",
@@ -110,10 +127,14 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [1.6183, 44.0752]
+        "coordinates": [1.61865, 44.07515]
       },
       "properties": {
-        "id": 6,
+        "id": 6,        
+        "anchor":"bottom",
+        "offsetX": 0,
+        "offsetY": 0,
+        "imageScale": 0.8,
         "title": "Découverte et restauration de la fileuse",
         "title-en": "Discovery and Restoration of the Spinner’s House",
         "author": "avec Jean-Claude Herraïz",
@@ -122,7 +143,7 @@
         "description-en": "Jean-Claude Herraïz owns the Spinner’s House guesthouse. He speaks about his attachment to heritage through the restoration of this family inheritance.",
         "audio": "assets/audio/6_audio.mp3",
         "subtitle": "assets/subtitles/6.srt",
-        "icon": "assets/icons/60.png",
+        "icon": "assets/icons/6.png",
         "image": "assets/images/6.png"
       }
     },
@@ -131,10 +152,14 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [1.61805, 44.0748]
+        "coordinates": [1.61809, 44.0747]
       },
       "properties": {
-        "id": 7,
+        "id": 7,        
+        "anchor":"bottom",
+        "offsetX": 0,
+        "offsetY": 0,
+        "imageScale": 0.9,
         "title": "Aménagement du jardin des curés",
         "title-en": "Development of the Priests’ Garden",
         "author": "avec Aquilino Torrao",
@@ -152,10 +177,13 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [1.6195, 44.07612]
+        "coordinates": [1.61965486, 44.07604735]
       },
       "properties": {
-        "id": 8,
+        "id": 8,        
+        "anchor":"bottom",
+        "offsetX": -100,
+        "offsetY": 100,
         "title": "Restauration de la tour du Réginet",
         "title-en": "Restoration of the Réginet Tower",
         "author": "avec Aquilino Torrao",
@@ -176,7 +204,10 @@
         "coordinates": [1.6185, 44.0735]
       },
       "properties": {
-        "id": 9,
+        "id": 9,        
+        "anchor":"bottom",
+        "offsetX": 0,
+        "offsetY": 0,
         "title": "Le Moulin de Montricoux",
         "title-en": "The Montricoux Mill",
         "author": "par Thierry Faucher",
@@ -194,10 +225,13 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [1.619, 44.0744]
+        "coordinates": [1.6149, 44.072]
       },
       "properties": {
-        "id": 10,
+        "id": 10,        
+        "anchor":"bottom",
+        "offsetX": 0,
+        "offsetY": 0,
         "title": "Les briqueteries de Montricoux",
         "title-en": "The Brickworks of Montricoux",
         "author": "par Diego Lara",
@@ -215,10 +249,14 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [1.6185, 44.0755]
+        "coordinates": [1.617, 44.0729]
       },
       "properties": {
-        "id": 11,
+        "id": 11,        
+        "anchor":"bottom",
+        "offsetX": 0,
+        "offsetY": 0,
+        "imageScale": 1,
         "title": "Le regard de l’architecte des Bâtiments de France",
         "title-en": "The Perspective of the Architect of Historic Buildings",
         "author": "par Isabelle Van Mastrigt",
@@ -227,8 +265,32 @@
         "description-en": "Isabelle Van Mastrigt is an Architect of Historic Buildings in France. She shares her historical and heritage-based interpretation of the village of Montricoux.",
         "audio": "assets/audio/11_audio.mp3",
         "subtitle": "assets/subtitles/11.srt",
-        "icon": "assets/icons/110.png",
+        "icon": "assets/icons/11.png",
         "image": "assets/images/11.png"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.6194, 44.0752]
+      },
+      "properties": {
+        "id": 12,        
+        "anchor":"bottom",
+        "offsetX": 0,
+        "offsetY": 0,
+        "title": "Le",
+        "title-en": "The",
+        "author": "par ",
+        "author-en": "by ",
+        "description": "",
+        "description-en": "",
+        "audio": "assets/audio/12_audio.mp3",
+        "subtitle": "assets/subtitles/12.srt",
+        "icon": "assets/icons/12.png",
+        "image": "assets/images/12.png"
       }
     }
   ]

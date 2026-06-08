@@ -1,6 +1,6 @@
 1
 00:00:00,080 --> 00:00:04,280
-Je suis née à Paris au cœur de mon berceau, la galerie Marcel-le-Noir à Saint-Germain-des-Prés,
+Je suis née à Paris au cœur de mon berceau, la galerie Marcel-Lenoir à Saint-Germain-des-Prés,
 
 2
 00:00:04,540 --> 00:00:11,360
@@ -12,7 +12,7 @@ Et effectivement, cette anecdote qui est formidable, c'est que papa arrive comme
 
 4
 00:00:19,000 --> 00:00:21,220
-en disant « j'ai acheté le château de Moricou ».
+en disant « j'ai acheté le château de Montricoux ».
 
 5
 00:00:21,660 --> 00:00:23,400
@@ -20,7 +20,7 @@ Maman lui dit « c'est une blague ».
 
 6
 00:00:23,920 --> 00:00:27,500
-Non, non, mais non, je reviens, j'ai tous les papiers de l'hôter, on peut plus reculer.
+Non, non, mais non, je reviens, j'ai tous les papiers du notaire, on ne peut plus reculer.
 
 7
 00:00:27,620 --> 00:00:30,100
@@ -44,7 +44,7 @@ que mes parents ont arrêté le doublon de métier de marchand d'art à Paris
 
 12
 00:00:44,360 --> 00:00:48,720
-pour se consacrer uniquement à l'omnivore Marcel Lenoir,
+pour se consacrer uniquement à l'omnivore Marcel-Lenoir,
 
 13
 00:00:49,240 --> 00:00:50,660
@@ -88,7 +88,7 @@ parce que j'ai le
 
 23
 00:01:12,240 --> 00:01:14,040
-sentiment, et que ma place
+sentiment que ma place
 
 24
 00:01:14,220 --> 00:01:16,280
@@ -96,7 +96,7 @@ aussi est là, de transmettre
 
 25
 00:01:16,380 --> 00:01:17,720
-l'art de Marcel Lenoir,
+l'art de Marcel-Lenoir,
 
 26
 00:01:17,880 --> 00:01:19,960
@@ -124,7 +124,7 @@ Et tout ça nous emmène dans le fabuleux
 
 32
 00:01:32,680 --> 00:01:34,780
-à avoir comme lui, en fait, une vie bouissante,
+à avoir comme lui, en fait, une vie éblouissante,
 
 33
 00:01:34,900 --> 00:01:36,720
@@ -140,7 +140,7 @@ mes parents étaient prisonniers du labyrinthe,
 
 36
 00:01:40,680 --> 00:01:42,020
-mais voilà, vous m'ont tout repiégé,
+me voilà à mon tour piégée,
 
 37
 00:01:42,120 --> 00:01:43,160
@@ -156,11 +156,11 @@ que nous sommes en connexion
 
 40
 00:01:47,840 --> 00:01:49,020
-avec Valden et Marcel Noir.
+avec Madeleine et Marcel-Lenoir.
 
 41
 00:01:49,200 --> 00:01:50,840
-On peut paraître un peu éliminé comme ça,
+On peut paraître un peu illuminés comme ça,
 
 42
 00:01:51,380 --> 00:01:52,660
@@ -189,4 +189,3 @@ Je crois qu'ils sont quand même contents, j'espère.
 48
 00:02:06,500 --> 00:02:11,120
 Et puis voilà, c'est notre passé, c'est notre présent et c'est notre futur.
-

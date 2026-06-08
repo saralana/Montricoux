@@ -12,7 +12,7 @@ Quoi faire? En fait, on a une tour médiévale
 
 4
 00:00:10,320 --> 00:00:12,600
-avec une post-transformation inédite en dessous.
+avec un poste de transformation ENEDIS en dessous.
 
 5
 00:00:14,000 --> 00:00:17,760
@@ -36,7 +36,7 @@ qu'est-ce qu'on peut faire avec cette tour de manière à la protéger.
 
 10
 00:00:28,400 --> 00:00:31,860
-Et moi, de manière assez intuitive, j'ai dit qu'une seule chose qu'on peut faire, c'est un toit.
+Et moi, de manière assez intuitive, j'ai dit l'unique chose qu'on peut faire, c'est un toit.
 
 11
 00:00:32,520 --> 00:00:35,380
@@ -64,11 +64,11 @@ faite en bois, et avec un couronnement,
 
 17
 00:00:51,480 --> 00:00:55,020
-c'est le toit, qui est un toit qui est en cône,
+c'est un toit qui est en cône,
 
 18
 00:00:55,860 --> 00:01:00,840
-et qu'en même temps, il y a une rive qui est en cuivre qui lui donne une finition plus qualitative.
+et il y a une rive qui est en cuivre qui lui donne une finition plus qualitative.
 
 19
 00:01:01,440 --> 00:01:04,620
@@ -88,15 +88,15 @@ Quand tu descends de la route de Saint-Antonin, elle apparaît, et à nouveau, e
 
 23
 00:01:16,420 --> 00:01:20,820
-C'est pour ça qu'aussi avec les architectes bâtiments de France, ils ont accepté, ils ont aimé même la proposition.
+C'est pour ça que les Architectes Bâtiments de France ont accepté, ils ont aimé même la proposition.
 
 24
 00:01:22,180 --> 00:01:29,280
-Et on étend quand même à nouveau une intervention que moi je considère contemporaine.
+En étant quand même à nouveau une intervention que moi je considère contemporaine.
 
 25
 00:01:30,300 --> 00:01:35,080
-Ce qui est un épisode, un anecdote qui est intéressant, c'est que normalement l'architecture c'est très long.
+Ce qui est une anecdote qui est intéressante, c'est que normalement l'architecture c'est très long.
 
 26
 00:01:35,880 --> 00:01:39,380
@@ -132,9 +132,8 @@ Mais on donne une autre vision en plus.
 
 34
 00:02:03,380 --> 00:02:08,940
-On donne des grilles de lecture en plus à ce bâtiment-là existant.
+On donne des grilles de lecture en plus à ce bâtiment existant.
 
 35
 00:02:09,240 --> 00:02:11,360
-Et on la ramène vers l'époque contemporaine.
-
+Et on le ramène vers l'époque contemporaine.

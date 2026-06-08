@@ -1,14 +1,14 @@
 1
 00:00:00,720 --> 00:00:06,140
-On peut raisonnablement dire que le moulin de Moricou existe depuis le 8e siècle.
+On peut raisonnablement dire que le moulin de Montricoux existe depuis le VIIIe siècle.
 
 2
 00:00:07,440 --> 00:00:12,900
-Donc le moulin de Moricou fait partie des plus vieilles entreprises du coin, au niveau historique.
+Donc le moulin de Montricoux fait partie des plus vieilles entreprises du coin, au niveau historique.
 
 3
 00:00:13,060 --> 00:00:17,380
-Et aujourd'hui c'est la dernière minoterie en activité dans le Tarn-les-Garonnes.
+Et aujourd'hui c'est la dernière minoterie en activité dans le Tarn-et-Garonne.
 
 4
 00:00:18,340 --> 00:00:26,260
@@ -16,11 +16,11 @@ Parce que, notamment en conventionnel, la boulangerie artisanale va très mal, i
 
 5
 00:00:27,020 --> 00:00:30,060
-parce qu'il y a un développement très important de chaînes de boulangerie.
+Parce qu'il y a un développement très important de chaînes de boulangerie.
 
 6
 00:00:31,260 --> 00:00:34,820
-Et quand vous avez, par exemple, Marie Blanchère qui ouvre dans un secteur,
+Et quand vous avez, par exemple, Marie Blachère qui ouvre dans un secteur,
 
 7
 00:00:35,600 --> 00:00:39,440
@@ -48,11 +48,11 @@ des blés régionaux, etc.
 
 13
 00:00:52,500 --> 00:00:56,800
-Et qui sont vraiment attachés à avoir un moulin local type artisanal.
+Et qui sont vraiment attachés à avoir un moulin local de type artisanal.
 
 14
 00:00:57,780 --> 00:00:59,460
-Et alors, comment vous voyez la suite?
+Et alors, comment vous voyez la suite ?
 
 15
 00:01:00,980 --> 00:01:02,060
@@ -68,7 +68,7 @@ Ma famille.
 
 18
 00:01:09,700 --> 00:01:13,500
-Et moi, je suis exploitant de la société, la SAS, qui est en moi.
+Et moi, je suis exploitant de la société, la SAS, qui est à moi.
 
 19
 00:01:13,700 --> 00:01:17,600
@@ -116,7 +116,7 @@ La technique d'un moulin, c'est prendre du blé,
 
 30
 00:01:44,250 --> 00:01:45,600
-de l'écraser, de la transformer en farine.
+de l'écraser, de le transformer en farine.
 
 31
 00:01:46,620 --> 00:01:51,680
@@ -141,4 +141,3 @@ Même en étant une petite structure, j'aime bien développer, créer des produi
 36
 00:02:15,640 --> 00:02:18,520
 chercher quoi, chercher à améliorer les choses.
-

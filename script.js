@@ -19,17 +19,12 @@ mapboxgl.accessToken =
 // ========================================
 
 const map = new mapboxgl.Map({
-
   container:'map',
-
   style:'mapbox://styles/saralgc/cmp4m6wdn001g01s9d409darw',
-
   pitchWithRotate:false,
-
   dragRotate:false,
-
-  renderWorldCopies:false
-
+  renderWorldCopies:false,
+  maxZoom:20
 })
 
 const bounds = [
@@ -44,35 +39,24 @@ map.fitBounds(bounds,{
 
 map.once('idle',()=>{
 
-  const isMobile =
-  window.innerWidth < 768
+  const vw = window.innerWidth
+  let zoom
 
-  const center =
-  map.getCenter()
-
-  if(isMobile){
-
-    map.easeTo({
-      center:[
-        center.lng + 0.0015,
-        center.lat
-      ],
-      duration:0
-    })
-
+  if(vw < 768){ // mobile
+    zoom = 16.2
+  }
+  else if(vw < 1800){ // notebook
+    zoom = 17.2
+  }
+  else{ // desktop grande
+    zoom = 17.7
   }
 
-  else{
-
-    map.easeTo({
-      center:[
-        center.lng,
-        center.lat + 0.0006
-      ],
-      duration:0
-    })
-
-  }
+  map.easeTo({
+    center:[ 1.6187544, 44.0753192 ],
+    zoom,
+    duration:0
+  })
 
 })
 
@@ -125,6 +109,9 @@ document.getElementById('player-author')
 const descriptionToggle =
 document.getElementById('description-toggle')
 
+const backToMap =
+document.getElementById('back-to-map')
+
 // ========================================
 // SIDEBAR
 // ========================================
@@ -143,36 +130,97 @@ closeSidebar.addEventListener('click',()=>{
 
 })
 
-// ========================================
-// MARKER SCALE
-// ========================================
-
-function updateMarkerScale(){
-
-  const zoom = map.getZoom()
-  const useImages = zoom >= 18
-
-  let scale
-
-  if(zoom <= 15){
-
-    scale = 1
-
+backToMap.addEventListener('click',()=>{
+  const vw =
+  window.innerWidth
+  let zoom
+  if(vw < 768){
+    zoom = 16.2
+  }
+  else if(vw < 1800){
+    zoom = 17.2
+  }
+  else{
+    zoom = 17.7
   }
 
-  else if(zoom <= 20){
+  map.flyTo({
+    center:[
+      1.6187544,
+      44.0753192
+    ],
+    zoom,
+    duration:1500,
+    essential:true
+  })
 
-    scale =
-    1 + ((zoom - 15) * 0.15)
+  playerPanel.classList.remove('active')
+})
 
+// ========================================
+// MARKER AND DECORATION SCALE
+// ========================================
+
+function updateDecorations(){
+
+  const zoom =
+  map.getZoom()
+
+  document
+  .querySelectorAll('.decoration')
+  .forEach(el=>{
+
+    const minZoom =
+    parseFloat(
+      el.dataset.minZoom
+    )
+
+    if(zoom < minZoom){
+      el.style.opacity = 0
+    }
+
+    else{
+      el.style.opacity = 1
+    }
+
+    const scale =
+    parseFloat(
+      el.dataset.scale || 1
+    )
+
+    const rotation =
+    parseFloat(
+      el.dataset.rotation || 0
+    )
+
+    el.style.transform =
+    `scale(${scale}) rotate(${rotation}deg)`
+  })
+
+}
+
+function updateMarkerScale(){
+  const zoom = map.getZoom()
+  const useImages = zoom >= 18
+  let scale
+  if(zoom <= 18){
+    const vw =
+    window.innerWidth
+
+    if(vw < 768){
+      scale = 0.4
+    }
+    else if(vw < 1800){
+      scale = 0.55
+    }
+    else{
+      scale = 0.75
+    }
   }
 
   else{
-
-    scale = 3.25
-
+    scale = 1.2*(zoom - 17.5)
   }
-
   document
   .querySelectorAll('.marker-inner')
   .forEach(marker => {
@@ -188,17 +236,89 @@ function updateMarkerScale(){
     const isActive =
     marker.classList.contains('active-marker')
 
+    const imageScale =
+    parseFloat(marker.dataset.imageScale || 1)
+
     const finalScale =
-    isActive
-    ? scale * 1.05
+    useImages
+    ? scale * imageScale
     : scale
 
+    const offsetX =
+    useImages
+    ? parseFloat(marker.dataset.offsetX || 0)
+    : 0
+
+    const offsetY =
+    useImages
+    ? parseFloat(marker.dataset.offsetY || 0)
+    : 0
+
     marker.style.transform =
-    `scale(${finalScale})`
-
+    `translate(${offsetX}px, ${offsetY}px) scale(${finalScale})`
   })
-
 }
+
+// ========================================
+// DECORATIONS
+// ========================================
+
+const decorations = [
+
+  // ======================================
+  // BUILDINGS
+  // ======================================
+
+  {
+    image:'assets/decorations/pont.png',
+    lng:1.617,
+    lat:44.0728,
+    zoom:17,
+    scale:1,
+    rotation:0
+  },
+
+  {
+    image:'assets/decorations/moulin.png',
+    lng:1.61858,
+    lat:44.0735, 
+    zoom:17,
+    scale:0.1,
+    rotation:0
+  },
+
+  // ======================================
+  // STREETS
+  // ======================================
+
+  {
+    image:'assets/decorations/grand-rue.png',
+    lng:1.612606,
+    lat:44.070790,
+    zoom:18.5,
+    scale:1,
+    rotation:-35
+  },
+
+  {
+    image:'assets/decorations/rueDeLaResistence.png',
+    lng:1.612606,
+    lat:44.070790,
+    zoom:18.5,
+    scale:1,
+    rotation:15
+  },
+
+  {
+    image:'assets/decorations/rueDeLAqueduc.png',
+    lng:1.612606,
+    lat:44.070790,
+    zoom:18.5,
+    scale:1,
+    rotation:-22
+  }
+
+]
 
 // ========================================
 // LOAD GEOJSON
@@ -207,6 +327,43 @@ function updateMarkerScale(){
 map.on('load',async()=>{
 
   console.log('MAP LOADED')
+
+  // ========================================
+  // DECORATION MARKERS
+  // ========================================
+
+  decorations.forEach(item=>{
+
+    const el =
+    document.createElement('div')
+
+    el.className =
+    'decoration'
+
+    el.style.backgroundImage =
+    `url(${item.image})`
+
+    el.dataset.minZoom =
+    item.zoom
+
+    el.dataset.scale =
+    item.scale
+
+    el.dataset.rotation =
+    item.rotation
+
+    new mapboxgl.Marker(el,{
+      anchor:'center'
+    })
+    .setLngLat([
+      item.lng,
+      item.lat
+    ])
+    .addTo(map)
+
+  })
+
+  updateDecorations()
 
   const response =
   await fetch('data/pontos.geojson')
@@ -240,11 +397,15 @@ map.on('load',async()=>{
     inner.style.backgroundImage =
     `url(${props.icon})`
 
-    inner.dataset.icon =
-    props.icon
+    inner.dataset.icon = props.icon
 
-    inner.dataset.image =
-    props.image
+    inner.dataset.image = props.image
+    inner.dataset.offsetX =
+    props.offsetX || 0
+    inner.dataset.offsetY =
+    props.offsetY || 0
+    inner.dataset.imageScale =
+    props.imageScale || 1
 
     el.appendChild(inner)
 
@@ -252,7 +413,9 @@ map.on('load',async()=>{
     // MARKER
     // ========================================
 
-    new mapboxgl.Marker(el)
+    new mapboxgl.Marker(el,{
+      anchor: props.anchor || 'center'
+    })
       .setLngLat(coords)
       .addTo(map)
 
@@ -387,7 +550,10 @@ map.on('load',async()=>{
   // ZOOM
   // ========================================
 
-  map.on('zoom',updateMarkerScale)
+  map.on('zoom',()=>{
+    updateMarkerScale()
+    updateDecorations()
+  })
 
 })
 
