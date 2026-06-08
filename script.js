@@ -1,3 +1,4 @@
+console.log('SCRIPT NOVO 17:50')
 const sidebar =
 document.getElementById('sidebar')
 
@@ -548,38 +549,39 @@ map.on('load',async()=>{
 
     el.addEventListener('click',(event)=>{
 
-      console.log('MARKER CLICK')
-
       event.stopPropagation()
 
-      console.log(props.title)
-
       // CLOSE SIDEBAR
-
       sidebar.classList.remove('active')
 
       // OPEN PLAYER
-
       playerPanel.classList.add('active')
 
       // RESET ALL MARKERS
-
       document
       .querySelectorAll('.marker-inner')
       .forEach(marker => {
-
         marker.classList.remove('active-marker')
-
         /*marker.style.backgroundImage =
         `url(${marker.dataset.icon})`*/
-
       })
 
       // ZOOM TO MARKER
+      const vw = window.innerWidth
+      let zoom
+      if(vw < 768){
+          zoom = 18.5
+      }
+      else if(vw < 1800){
+          zoom = 19
+      }
+      else{
+          zoom = 20
+      }
 
       map.flyTo({
         center:feature.geometry.coordinates,
-        zoom:19,
+        zoom,
         duration:2000,
         essential:true
       })
@@ -734,7 +736,6 @@ if('serviceWorker' in navigator){
         console.log(
           'SERVICE WORKER OK'
         )
-
       })
 
       .catch(error=>{
