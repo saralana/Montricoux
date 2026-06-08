@@ -127,24 +127,23 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [1.61865, 44.07515]
+        "coordinates": [1.6194, 44.0752]
       },
       "properties": {
-        "id": 12,        
+        "id": 6,        
         "anchor":"bottom",
         "offsetX": 0,
         "offsetY": 0,
-        "imageScale": 0.8,
-        "title": "Les maisons en-pan-de-bois",
-        "title-en": "Timber-framed houses",
-        "author": "par Léa Gérardin-Macario",
-        "author-en": "by Léa Gérardin-Macario",
-        "description": "Léa Gérardin est chargée de mission inventaire au Pays Midi-Quercy. Elle partage ici son regard d’archéologue du bâti sur ce mode de construction qui traverse les époques.",
-        "description-en": "Léa Gérardin is an Inventory Project Officer for the Pays Midi-Quercy region. Here, she shares her perspective as a building archaeologist on this construction method that has endured through the ages.",
-        "audio": "assets/audio/12_audio.mp3",
-        "subtitle": "assets/subtitles/12.srt",
-        "icon": "assets/icons/6.png",
-        "image": "assets/images/6.png"
+        "title": "Découverte et restauration de la fileuse",
+        "title-en": "Discovery and Restoration of the Spinner’s House",
+        "author": "avec Jean-Claude Herraïz",
+        "author-en": "with Jean-Claude Herraïz",
+        "description": "Jean-Claude Herraïz est propriétaire du gîte de la fileuse. Il évoque son attachement au patrimoine à travers la restauration qu’il a fait de cet héritage familial.",
+        "description-en": "Jean-Claude Herraïz owns the Spinner’s House guesthouse. He speaks about his attachment to heritage through the restoration of this family inheritance.",
+        "audio": "assets/audio/6_audio.mp3",
+        "subtitle": "assets/subtitles/6.srt",
+        "icon": "assets/icons/12.png",
+        "image": "assets/images/12.png"
       }
     },
 
@@ -274,24 +273,26 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [1.6194, 44.0752]
+        "coordinates": [1.61865, 44.07515]
       },
       "properties": {
-        "id": 6,        
+        "id": 12,        
         "anchor":"bottom",
         "offsetX": 0,
         "offsetY": 0,
-        "title": "Découverte et restauration de la fileuse",
-        "title-en": "Discovery and Restoration of the Spinner’s House",
-        "author": "avec Jean-Claude Herraïz",
-        "author-en": "with Jean-Claude Herraïz",
-        "description": "Jean-Claude Herraïz est propriétaire du gîte de la fileuse. Il évoque son attachement au patrimoine à travers la restauration qu’il a fait de cet héritage familial.",
-        "description-en": "Jean-Claude Herraïz owns the Spinner’s House guesthouse. He speaks about his attachment to heritage through the restoration of this family inheritance.",
-        "audio": "assets/audio/6_audio.mp3",
-        "subtitle": "assets/subtitles/6.srt",
-        "icon": "assets/icons/12.png",
-        "image": "assets/images/12.png"
+        "imageScale": 0.8,
+        "title": "Les maisons en-pan-de-bois",
+        "title-en": "Timber-framed houses",
+        "author": "par Léa Gérardin-Macario",
+        "author-en": "by Léa Gérardin-Macario",
+        "description": "Léa Gérardin est chargée de mission inventaire au Pays Midi-Quercy. Elle partage ici son regard d’archéologue du bâti sur ce mode de construction qui traverse les époques.",
+        "description-en": "Léa Gérardin is an Inventory Project Officer for the Pays Midi-Quercy region. Here, she shares her perspective as a building archaeologist on this construction method that has endured through the ages.",
+        "audio": "assets/audio/12_audio.mp3",
+        "subtitle": "assets/subtitles/12.srt",
+        "icon": "assets/icons/6.png",
+        "image": "assets/images/6.png"
       }
     }
+    
   ]
 }
