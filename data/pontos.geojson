@@ -80,21 +80,21 @@
         "coordinates": [1.6189, 44.0758]
       },
       "properties": {
-        "id": 4,        
+        "id": 6,        
         "anchor":"bottom",
         "offsetX": 0,
         "offsetY": 0,
         "imageScale": 0.7,
-        "title": "Point de vue de collectionneur",
-        "title-en": "A Collector’s Perspective",
-        "author": "avec Diego Lara",
-        "author-en": "with Diego Lara",
-        "description": "Diégo Lara est un collectionneur passionné et autodidacte. Il raconte son amour pour les peintres de Montricoux et sa volonté de partager ses trésors avec le public.",
-        "description-en": "Diégo Lara is a passionate self-taught collector. He shares his love for the painters of Montricoux and his desire to share his treasures with the public.",
-        "audio": "assets/audio/4_audio.mp3",
-        "subtitle": "assets/subtitles/4.srt",
-        "icon": "assets/icons/4.png",
-        "image": "assets/images/4.png"
+        "title": "Découverte et restauration de la fileuse",
+        "title-en": "Discovery and Restoration of the Spinner’s House",
+        "author": "avec Jean-Claude Herraïz",
+        "author-en": "with Jean-Claude Herraïz",
+        "description": "Jean-Claude Herraïz est propriétaire du gîte de la fileuse. Il évoque son attachement au patrimoine à travers la restauration qu’il a fait de cet héritage familial.",
+        "description-en": "Jean-Claude Herraïz owns the Spinner’s House guesthouse. He speaks about his attachment to heritage through the restoration of this family inheritance.",
+        "audio": "assets/audio/6_audio.mp3",
+        "subtitle": "assets/subtitles/6.srt",
+        "icon": "assets/icons/6.png",
+        "image": "assets/images/6.png"
       }
     },
 
@@ -130,20 +130,20 @@
         "coordinates": [1.61965, 44.0755]
       },
       "properties": {
-        "id": 6,        
+        "id": 4,        
         "anchor":"bottom",
         "offsetX": -10,
         "offsetY": 200,
-        "title": "Découverte et restauration de la fileuse",
-        "title-en": "Discovery and Restoration of the Spinner’s House",
-        "author": "avec Jean-Claude Herraïz",
-        "author-en": "with Jean-Claude Herraïz",
-        "description": "Jean-Claude Herraïz est propriétaire du gîte de la fileuse. Il évoque son attachement au patrimoine à travers la restauration qu’il a fait de cet héritage familial.",
-        "description-en": "Jean-Claude Herraïz owns the Spinner’s House guesthouse. He speaks about his attachment to heritage through the restoration of this family inheritance.",
-        "audio": "assets/audio/6_audio.mp3",
-        "subtitle": "assets/subtitles/6.srt",
-        "icon": "assets/icons/12.png",
-        "image": "assets/images/12.png"
+        "title": "Point de vue de collectionneur",
+        "title-en": "A Collector’s Perspective",
+        "author": "avec Diego Lara",
+        "author-en": "with Diego Lara",
+        "description": "Diégo Lara est un collectionneur passionné et autodidacte. Il raconte son amour pour les peintres de Montricoux et sa volonté de partager ses trésors avec le public.",
+        "description-en": "Diégo Lara is a passionate self-taught collector. He shares his love for the painters of Montricoux and his desire to share his treasures with the public.",
+        "audio": "assets/audio/4_audio.mp3",
+        "subtitle": "assets/subtitles/4.srt",
+        "icon": "assets/icons/4.png",
+        "image": "assets/images/4.png"
       }
     },
 
@@ -289,8 +289,8 @@
         "description-en": "Léa Gérardin is an Inventory Project Officer for the Pays Midi-Quercy region. Here, she shares her perspective as a building archaeologist on this construction method that has endured through the ages.",
         "audio": "assets/audio/12_audio.mp3",
         "subtitle": "assets/subtitles/12.srt",
-        "icon": "assets/icons/6.png",
-        "image": "assets/images/6.png"
+        "icon": "assets/icons/12.png",
+        "image": "assets/images/12.png"
       }
     }
     
