@@ -1,5 +1,5 @@
 const CACHE_NAME =
-'montricoux-v1'
+'montricoux-v2'
 
 const urlsToCache = [
 
@@ -11,6 +11,7 @@ const urlsToCache = [
   '/script.js',
   '/player.js',
   '/subtitles.js',
+  '/favicon.ico',
 
   '/data/pontos.geojson',
 
@@ -145,20 +146,31 @@ self.addEventListener(
 
 self.addEventListener(
   'fetch',
-  event=>{
+  event => {
 
     event.respondWith(
 
-      caches.match(
-        event.request
-      )
+      caches.match(event.request)
 
-      .then(response=>{
+      .then(response => {
 
-        return (
-          response ||
-          fetch(event.request)
-        )
+        if (response) {
+          return response
+        }
+
+        return fetch(event.request)
+          .catch(() => {
+
+            console.log(
+              'OFFLINE:',
+              event.request.url
+            )
+
+            return new Response('', {
+              status: 404
+            })
+
+          })
 
       })
 
