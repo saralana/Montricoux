@@ -127,13 +127,13 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [1.6194, 44.0752]
+        "coordinates": [1.61965, 44.0755]
       },
       "properties": {
         "id": 6,        
         "anchor":"bottom",
-        "offsetX": 0,
-        "offsetY": 0,
+        "offsetX": -10,
+        "offsetY": 200,
         "title": "Découverte et restauration de la fileuse",
         "title-en": "Discovery and Restoration of the Spinner’s House",
         "author": "avec Jean-Claude Herraïz",
