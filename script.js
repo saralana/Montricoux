@@ -250,11 +250,111 @@ const decorations = [
   {
     id:'grand-rue',
     image:'grand-rue',
-    lng:1.612606,
-    lat:44.070790,
-    zoom:18.5,
-    scale:1,
+    lng:1.61898,
+    lat:44.07542,
+    zoom:18,
+    scale:0.14,
     rotation:-35
+  },
+
+  {
+    id:'grand-rue-2',
+    image:'grand-rue-2',
+    lng:1.618,
+    lat:44.075128,
+    zoom:18,
+    scale:0.14,
+    rotation:-5
+  },
+
+  {
+    id:'PlaceMarcelLenoir',
+    image:'PlaceMarcelLenoir',
+    lng:1.6179,
+    lat:44.07532,
+    zoom:18,
+    scale:0.15,
+    rotation:0
+  },
+
+  {
+    id:'PlaceNationale',
+    image:'PlaceNationale',
+    lng:1.6188,
+    lat:44.07526,
+    zoom:18,
+    scale:0.3,
+    rotation:-18
+  },
+
+  {
+    id:'PlaceNeuve',
+    image:'PlaceNeuve',
+    lng:1.61915,
+    lat:44.07485,
+    zoom:18,
+    scale:0.18,
+    rotation:0
+  },
+
+  {
+    id:'rueDeLAqueduc',
+    image:'rueDeLAqueduc',
+    lng:1.619076,
+    lat:44.07505,
+    zoom:18.1,
+    scale:0.17,
+    rotation:95
+  },
+
+  {
+    id:'rueDeLaResistence',
+    image:'rueDeLaResistence',
+    lng:1.61874,
+    lat:44.0751,
+    zoom:18.1,
+    scale:0.17,
+    rotation:93
+  },
+
+  {
+    id:'rueSaintAntoine',
+    image:'rueSaintAntoine',
+    lng:1.6187,
+    lat:44.0756,
+    zoom:18.1,
+    scale:0.17,
+    rotation:43
+  },
+
+  {
+    id:'rueSaintEutrope',
+    image:'rueSaintEutrope',
+    lng:1.61891,
+    lat:44.0756,
+    zoom:18.1,
+    scale:0.17,
+    rotation:44
+  },
+
+  {
+    id:'rueDesRemparts',
+    image:'rueDesRemparts',
+    lng:1.61993,
+    lat:44.075,
+    zoom:18.1,
+    scale:0.27,
+    rotation:110
+  },
+
+  {
+    id:'rueDesTempliers',
+    image:'rueDesTempliers',
+    lng:1.61859,
+    lat:44.075735,
+    zoom:18.1,
+    scale:0.15,
+    rotation:-20
   }
 
 ]
@@ -332,11 +432,11 @@ map.on('load',async()=>{
     id:'decorations-buildings',
     type:'symbol',
     source:'decorations',
-    minzoom:17,
+    minzoom:18.1,
     filter:[
       '<',
       ['get','zoom'],
-      18
+      18.1
     ],
     layout:{
       'icon-image':['get','image'],
@@ -363,11 +463,11 @@ map.on('load',async()=>{
     id:'decorations-streets',
     type:'symbol',
     source:'decorations',
-    minzoom:18.5,
+    minzoom:19,
     filter:[
       '>=',
       ['get','zoom'],
-      18
+      18.1
     ],
     layout:{
       'icon-image':['get','image'],
@@ -385,6 +485,7 @@ map.on('load',async()=>{
       'icon-ignore-placement':true
     }
   })
+
   const response =
   await fetch('data/pontos.geojson')
 
