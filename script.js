@@ -20,7 +20,7 @@ mapboxgl.accessToken =
 
 const map = new mapboxgl.Map({
   container:'map',
-  style:'mapbox://styles/saralgc/cmp4m6wdn001g01s9d409darw',
+  style:'mapbox://styles/saralgc/cmq5blqjy007z01r2ehghfwol',
   pitchWithRotate:false,
   dragRotate:false,
   renderWorldCopies:false,
@@ -713,3 +713,39 @@ descriptionToggle.addEventListener('click',()=>{
     : '+'
 
 })
+
+
+// ========================================
+// SERVICE WORKER | CONTENT IN COOKIES
+// ========================================
+
+if('serviceWorker' in navigator){
+
+  window.addEventListener(
+    'load',
+    ()=>{
+
+      navigator
+      .serviceWorker
+      .register('/sw.js')
+
+      .then(()=>{
+
+        console.log(
+          'SERVICE WORKER OK'
+        )
+
+      })
+
+      .catch(error=>{
+
+        console.error(
+          error
+        )
+
+      })
+
+    }
+  )
+
+}
