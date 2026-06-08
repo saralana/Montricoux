@@ -158,46 +158,8 @@ backToMap.addEventListener('click',()=>{
 })
 
 // ========================================
-// MARKER AND DECORATION SCALE
+// MARKER SCALE
 // ========================================
-
-function updateDecorations(){
-
-  const zoom =
-  map.getZoom()
-
-  document
-  .querySelectorAll('.decoration')
-  .forEach(el=>{
-
-    const minZoom =
-    parseFloat(
-      el.dataset.minZoom
-    )
-
-    if(zoom < minZoom){
-      el.style.opacity = 0
-    }
-
-    else{
-      el.style.opacity = 1
-    }
-
-    const scale =
-    parseFloat(
-      el.dataset.scale || 1
-    )
-
-    const rotation =
-    parseFloat(
-      el.dataset.rotation || 0
-    )
-
-    el.style.transform =
-    `scale(${scale}) rotate(${rotation}deg)`
-  })
-
-}
 
 function updateMarkerScale(){
   const zoom = map.getZoom()
@@ -265,57 +227,34 @@ function updateMarkerScale(){
 
 const decorations = [
 
-  // ======================================
-  // BUILDINGS
-  // ======================================
-
   {
-    image:'assets/decorations/pont.png',
-    lng:1.617,
-    lat:44.0728,
+    id:'pont',
+    image:'pont',
+    lng:1.6169,
+    lat:44.07328,
     zoom:17,
-    scale:1,
+    scale:0.12,
     rotation:0
   },
 
   {
-    image:'assets/decorations/moulin.png',
+    id:'moulin',
+    image:'moulin',
     lng:1.61858,
-    lat:44.0735, 
+    lat:44.0736,
     zoom:17,
-    scale:0.1,
+    scale:0.2,
     rotation:0
   },
 
-  // ======================================
-  // STREETS
-  // ======================================
-
   {
-    image:'assets/decorations/grand-rue.png',
+    id:'grand-rue',
+    image:'grand-rue',
     lng:1.612606,
     lat:44.070790,
     zoom:18.5,
     scale:1,
     rotation:-35
-  },
-
-  {
-    image:'assets/decorations/rueDeLaResistence.png',
-    lng:1.612606,
-    lat:44.070790,
-    zoom:18.5,
-    scale:1,
-    rotation:15
-  },
-
-  {
-    image:'assets/decorations/rueDeLAqueduc.png',
-    lng:1.612606,
-    lat:44.070790,
-    zoom:18.5,
-    scale:1,
-    rotation:-22
   }
 
 ]
@@ -329,42 +268,123 @@ map.on('load',async()=>{
   console.log('MAP LOADED')
 
   // ========================================
-  // DECORATION MARKERS
+  // LOAD DECORATION IMAGES
   // ========================================
 
-  decorations.forEach(item=>{
-
-    const el =
-    document.createElement('div')
-
-    el.className =
-    'decoration'
-
-    el.style.backgroundImage =
-    `url(${item.image})`
-
-    el.dataset.minZoom =
-    item.zoom
-
-    el.dataset.scale =
-    item.scale
-
-    el.dataset.rotation =
-    item.rotation
-
-    new mapboxgl.Marker(el,{
-      anchor:'center'
+  for(const item of decorations){
+    await new Promise(resolve=>{
+      map.loadImage(
+        `assets/decorations/${item.image}.png`,
+        (error,image)=>{
+          if(error){
+            console.error(error)
+            resolve()
+            return
+          }
+          if(!map.hasImage(item.image)){
+            map.addImage(
+              item.image,
+              image
+            )
+          }
+          resolve()
+        }
+      )
     })
-    .setLngLat([
-      item.lng,
-      item.lat
-    ])
-    .addTo(map)
+  }
+  const decorationGeojson = {
+    type:'FeatureCollection',
+    features:
+    decorations.map(item=>({
+      type:'Feature',
+      properties:{
+        image:item.image,
+        scale:item.scale,
+        rotation:item.rotation,
+        zoom:item.zoom
+      },
+      geometry:{
+        type:'Point',
+        coordinates:[
+          item.lng,
+          item.lat
+        ]
+      }
+    }))
+  }
 
+  // ========================================
+  // DECORATION SOURCE
+  // ========================================
+
+  map.addSource(
+    'decorations',
+    {
+      type:'geojson',
+      data:decorationGeojson
+    }
+  )
+  // ========================================
+  // BUILDINGS
+  // ========================================
+
+  map.addLayer({
+    id:'decorations-buildings',
+    type:'symbol',
+    source:'decorations',
+    minzoom:17,
+    filter:[
+      '<',
+      ['get','zoom'],
+      18
+    ],
+    layout:{
+      'icon-image':['get','image'],
+      'icon-size':[
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        17,
+        ['get','scale'],
+        20,
+        ['*',['get','scale'],4]
+      ],
+      'icon-rotate':['get','rotation'],
+      'icon-allow-overlap':true,
+      'icon-ignore-placement':true
+    }
   })
 
-  updateDecorations()
+  // ========================================
+  // STREETS
+  // ========================================
 
+  map.addLayer({
+    id:'decorations-streets',
+    type:'symbol',
+    source:'decorations',
+    minzoom:18.5,
+    filter:[
+      '>=',
+      ['get','zoom'],
+      18
+    ],
+    layout:{
+      'icon-image':['get','image'],
+      'icon-size':[
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        17,
+        ['get','scale'],
+        20,
+        ['*',['get','scale'],3]
+      ],
+      'icon-rotate':['get','rotation'],
+      'icon-allow-overlap':true,
+      'icon-ignore-placement':true
+    }
+  })
   const response =
   await fetch('data/pontos.geojson')
 
@@ -550,10 +570,7 @@ map.on('load',async()=>{
   // ZOOM
   // ========================================
 
-  map.on('zoom',()=>{
-    updateMarkerScale()
-    updateDecorations()
-  })
+  map.on('zoom',updateMarkerScale)
 
 })
 
