@@ -183,24 +183,21 @@ display:none;
     max-height:500px;
   }
 
-  #description-toggle{
-    display:block;
-    
-    margin-top:2px;
-
-    background:none;
-    border:none;
-
-    color:var(--marron);
-
-    font-size:.8rem;
-    font-weight: bold;
-    letter-spacing:.08em;
-
-    opacity:.7;
-
-    cursor:pointer;
-  }
+    #description-toggle {
+        display: block;
+        margin-top: 2px;
+        background: none;
+        border: none;
+        color: var(--marron);
+        font-size: .8rem;
+        font-weight: 500;
+        opacity: .7;
+        cursor: pointer;
+        text-align: left;
+        text-decoration: underline;
+        font-family: 'Source Sans 3', sans-serif;
+    }
+  
 
 }
 
@@ -368,6 +365,12 @@ z-index:1000;
   border-radius: 50%;
   border-color: var(--marron);
   background: var(--marron);
+}
+
+.player .btn img{
+    width:24px;
+    height:24px;
+    display:block;
 }
 
 /* ESTILOS DO SEEKBAR */
@@ -604,7 +607,7 @@ LOGO
   }
 
     #logo-button{
-    width:30vw;
+    width:38vw;
     }
 }
 

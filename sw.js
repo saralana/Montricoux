@@ -27,6 +27,10 @@ const urlsToCache = [
   '/assets/ui/language_FRmarron.svg',
   '/assets/ui/zoom_in.svg',
   '/assets/ui/zoom_out.svg',
+  '/assets/ui/play.svg',
+  '/assets/ui/pause.svg',
+  '/assets/ui/mute.svg',
+  '/assets/ui/volume.svg',
 
   // IMAGES
 

@@ -1,6 +1,6 @@
 1
 00:00:01,820 --> 00:00:04,480
-Je vous avais parlé de Sandrine Ruffli et Léa aussi.
+Je vous avais parlé de Sandrine Ruefly et Léa aussi.
 
 2
 00:00:05,000 --> 00:00:07,000
@@ -24,7 +24,7 @@ Alors que cette maison on l'avait depuis les années 60 à peu près.
 
 7
 00:00:25,760 --> 00:00:28,780
-Mes parents me vivaient à côté de Madrid, à Guadalajara.
+Mes parents vivaient à côté de Madrid, à Guadalajara.
 
 8
 00:00:29,740 --> 00:00:30,660
@@ -36,11 +36,11 @@ Donc, ils ont été locataires
 
 10
 00:00:33,620 --> 00:00:35,620
-et mon père travaillait pour des bricatories.
+et mon père travaillait pour des briqueteries.
 
 11
 00:00:35,900 --> 00:00:36,960
-Moi, j'ai fait quelques études,
+J'ai fait quelques études,
 
 12
 00:00:37,200 --> 00:00:38,980
@@ -56,7 +56,7 @@ jusqu'à ce qu'ils meurent.
 
 15
 00:00:43,060 --> 00:00:45,200
-Donc, moi, j'ai pris la retraite en 2015.
+Donc, j'ai pris la retraite en 2015.
 
 16
 00:00:46,140 --> 00:00:46,900
@@ -80,15 +80,15 @@ Moi, j'ai dormi dans cette chambre.
 
 21
 00:01:00,920 --> 00:01:03,180
-Donc là, vous voyez le mur?
+Donc là, vous voyez le mur ?
 
 22
 00:01:04,190 --> 00:01:04,920
-Là, il y avait un couloir.
+Là, il y avait un couloir,
 
 23
 00:01:06,910 --> 00:01:07,600
-J'y arrivais jusque là.
+qui arrivait jusque là.
 
 24
 00:01:09,150 --> 00:01:10,120
@@ -100,7 +100,7 @@ On entrait dans la cuisine qui était là.
 
 26
 00:01:13,170 --> 00:01:14,100
-Et là, c'était une ébullienne de riz.
+Et là, c'était une buanderie.
 
 27
 00:01:15,700 --> 00:01:17,440
@@ -132,7 +132,7 @@ Donc j'ai discuté avec Aquilino.
 
 34
 00:01:33,820 --> 00:01:37,280
-Il m'a dit, moi, à ta place, les poutres, je les ferai sabler et je les laisse tel quel.
+Il m'a dit, moi, à ta place, les poutres, je les ferais sabler et je les laisserais tel quel.
 
 35
 00:01:37,940 --> 00:01:41,600
@@ -152,7 +152,7 @@ Et plutôt mal que bien.
 
 39
 00:01:52,880 --> 00:01:53,700
-mais il y avait les moyens qu'ils avaient.
+Mais avec les moyens qu'ils avaient.
 
 40
 00:01:54,500 --> 00:01:57,460
@@ -168,7 +168,7 @@ on arrache tout, et au fur et à mesure qu'on montait,
 
 43
 00:02:02,500 --> 00:02:03,360
-moi j'étais un temps de travailler là,
+moi j'étais en train de travailler là,
 
 44
 00:02:03,460 --> 00:02:06,060
@@ -180,7 +180,7 @@ Donc vous allez voir, on peut monter si vous voulez.
 
 46
 00:02:11,840 --> 00:02:12,820
-Normalement, ça ne peut s'allumer.
+Normalement, ça devrait s'allumer.
 
 47
 00:02:13,640 --> 00:02:14,120
@@ -191,49 +191,57 @@ Voilà, tout seul.
 On arrive à l'étage et la peinture c'est ça.
 
 49
-00:02:28,300 --> 00:02:35,760
-Donc quand il parle de la fileuse, je ne sais pas si vous voyez, pardon, il y a un rouet, il y a le fil là, qui vient à la main.
+00:02:28,300 --> 00:02:31,000
+Donc quand il parle de la fileuse, je ne sais pas si vous voyez, 
 
 50
-00:02:37,100 --> 00:02:43,180
-Et lorsqu'on a fait tomber, parce que vous voyez, il n'y a pas grand chose, là vous êtes sur le torchis, le plâtre il n'y a rien, il y a 3 mm.
+00:02:31,300 --> 00:02:35,760
+il y a un rouet, il y a le fil là, qui vient à la main.
 
 51
+00:02:37,100 --> 00:02:39,500
+Et lorsqu'on a fait tomber, parce que vous voyez, il n'y a pas grand chose,
+
+52
+00:02:40,100 --> 00:02:43,180
+ là vous êtes sur le torchis, le plâtre il n'y a rien, il y a 3 mm.
+
+53
 00:02:44,280 --> 00:02:45,520
 Et après il y avait encore une autre couche.
 
-52
+54
 00:02:46,360 --> 00:02:48,240
 Ça a permis de conserver la peinture.
 
-53
+55
 00:02:49,080 --> 00:02:51,280
 Peut-être qu'un jour je la ferai refaire, je ne sais pas, je verrai.
 
-54
-00:02:54,820 --> 00:02:55,720
-je connu mes parents
-
-55
-00:02:56,180 --> 00:02:57,160
-comme disait Coluche
-
 56
-00:02:57,240 --> 00:02:58,560
-la fin du mois c'était le 20 ou le 10
+00:02:54,820 --> 00:02:55,720
+J'ai connu mes parents,
 
 57
-00:03:00,620 --> 00:03:01,400
-donc aujourd'hui
+00:02:56,180 --> 00:02:57,160
+comme disait Coluche,
 
 58
+00:02:57,240 --> 00:02:58,560
+la fin du mois c'était le 20 ou le 10.
+
+59
+00:03:00,620 --> 00:03:01,400
+Donc aujourd'hui
+
+60
 00:03:01,600 --> 00:03:03,240
 c'est un pied de nez
 
-59
+61
 00:03:04,370 --> 00:03:04,720
-à la vie
+à la vie !
 
-60
+62
 00:03:06,260 --> 00:03:06,620
-voilà
+Voilà.

@@ -1,3 +1,15 @@
+const PLAY_ICON =
+'<img src="assets/ui/play.svg" alt="Play">'
+
+const PAUSE_ICON =
+'<img src="assets/ui/pause.svg" alt="Pause">'
+
+const VOLUME_ICON =
+'<img src="assets/ui/volume.svg" alt="Volume">'
+
+const MUTE_ICON =
+'<img src="assets/ui/mute.svg" alt="Mute">'
+
 // Elementos
 const audio = document.getElementById('audio');
 const playBtn = document.getElementById('play');
@@ -61,12 +73,12 @@ playBtn.addEventListener('click', async () => {
   try {
     if (audio.paused) {
       await audio.play();
-      playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+      playBtn.innerHTML = PAUSE_ICON;
       console.log('playing')
       startRaf();
     } else {
       audio.pause();
-      playBtn.innerHTML = '<i class="fas fa-play"></i>';
+      playBtn.innerHTML = PLAY_ICON;
       stopRaf();
     }
   } catch (err) {
@@ -77,7 +89,7 @@ playBtn.addEventListener('click', async () => {
 // mute toggle
 muteBtn.addEventListener('click', () => {
   audio.muted = !audio.muted;
-  muteBtn.innerHTML = audio.muted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
+  muteBtn.innerHTML = audio.muted ? MUTE_ICON : VOLUME_ICON;
 });
 
 // volume control
@@ -140,9 +152,9 @@ function stopRaf(){
 }
 
 // eventos nativos do audio
-audio.addEventListener('play', () => { playBtn.innerHTML = '<i class="fas fa-pause"></i>'; startRaf(); });
-audio.addEventListener('pause', () => { playBtn.innerHTML = '<i class="fas fa-play"></i>'; stopRaf(); });
-audio.addEventListener('ended', () => { playBtn.innerHTML = '<i class="fas fa-play"></i>'; stopRaf(); });
+audio.addEventListener('play', () => { playBtn.innerHTML = PAUSE_ICON; startRaf(); });
+audio.addEventListener('pause', () => { playBtn.innerHTML = PLAY_ICON; stopRaf(); });
+audio.addEventListener('ended', () => { playBtn.innerHTML = PLAY_ICON; stopRaf(); });
 
 //atualizacao legenda
 audio.addEventListener('timeupdate', () => {

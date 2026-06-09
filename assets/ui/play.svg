@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 176.84 223.54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #71433a;
+      }
+    </style>
+    <clipPath id="clippath">
+      <polygon class="cls-1" points="6843.46 4786.97 11913.72 4714.05 11913.72 1579.25 6843.46 1652.16 6843.46 4786.97"/>
+    </clipPath>
+  </defs>
+  <path class="cls-2" d="M15.37.21c3.67-.5,7.39-.16,10.7,1.51l143.29,95.27c9.31,6.64,10.14,21.13,1.29,28.57L25.61,222.07c-12.6,5.11-25.26-3.74-25.61-17.09L.03,17.31C.64,9.01,6.93,1.37,15.37.21Z"/>
+</svg>

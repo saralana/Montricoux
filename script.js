@@ -637,7 +637,9 @@ map.on('load',async()=>{
       playerDescription.classList.remove('expanded')
 
       descriptionToggle.textContent =
-      '+'
+      isEnglish
+        ? 'Read more'
+        : 'Lire la suite'
 
       playerAuthor.textContent =
       t('author')
@@ -709,11 +711,12 @@ descriptionToggle.addEventListener('click',()=>{
   const expanded =
   playerDescription.classList.contains('expanded')
 
-  descriptionToggle.textContent =
-  expanded
-    ? '−'
-    : '+'
+  const isEnglish =
+  window.location.pathname.includes('en.html')
 
+  descriptionToggle.textContent = expanded
+    ? (isEnglish ? 'Show less' : 'Réduire')
+    : (isEnglish ? 'Read more' : 'Lire la suite')
 })
 
 

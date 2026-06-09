@@ -220,7 +220,7 @@ quel qu'en soit l'époque.
 
 56
 00:02:15,420 --> 00:02:17,100
-Et puis, la nature, c'est changeant en permanence.
+Et puis, la nature, c'est changeant en permanence. 
 
 57
 00:02:17,240 --> 00:02:19,220
@@ -247,81 +247,85 @@ je pense que c'est valable dans toutes les époques.
 Effectivement, quand on regarde Marcel-Lenoir, a peint beaucoup de paysages.
 
 63
-00:02:35,440 --> 00:02:42,500
-Et Louis Cazottes était un peu dans cette même dynamique en disant « j'ai voyagé partout dans le monde, mais le plus bel endroit sur Terre, c'est Montricoux ».
+00:02:35,440 --> 00:02:38,500
+Et Louis Cazottes était un peu dans cette même dynamique en disant 
 
 64
+00:02:39,040 --> 00:02:42,500
+« j'ai voyagé partout dans le monde, mais le plus bel endroit sur Terre, c'est Montricoux ».
+
+65
 00:02:42,560 --> 00:02:44,320
 Voilà, donc je pense qu'il y a ça.
 
-65
+66
 00:02:45,580 --> 00:02:52,340
 Le lien entre le domaine artistique, la passion des hommes pour l'art, mais aussi pour le lieu où ils vivent,
 
-66
+67
 00:02:52,600 --> 00:02:55,160
 la passion aussi qu'ils ont entre eux de partager des choses.
 
-67
+68
 00:02:56,060 --> 00:02:59,660
 fait qu'on est dans un cocon, on va dire, assez protecteur.
 
-68
+69
 00:03:00,200 --> 00:03:03,980
 Donc merci à André Lacan, qui était une des premières personnes à vécu.
 
-69
+70
 00:03:03,990 --> 00:03:06,860
 J'ai eu des conversations sur ce sujet-là, c'est un passionné.
 
-70
+71
 00:03:08,260 --> 00:03:10,820
 Et il avait aussi ce souci des habitants,
 
-71
+72
 00:03:10,830 --> 00:03:14,980
 c'est-à-dire que pour lui, le village ne vivait pas sans l'âme du village, qui sont les habitants.
 
-72
+73
 00:03:15,540 --> 00:03:19,420
 Donc vraiment, c'était un sacré bonhomme dans le village, on le regrette.
 
-73
+74
 00:03:23,940 --> 00:03:25,300
 J'ai un peu de mal parce que c'était un ami.
 
-74
+75
 00:03:26,820 --> 00:03:31,960
 On a partagé vraiment beaucoup de choses, on avait beaucoup de points de vue communs sur la manière de se respecter.
 
-75
+76
 00:03:32,480 --> 00:03:38,960
 Je pense que de maintenir ce lien-là, c'est fort et je pense que les artistes sont en mesure de nous proposer ça.
 
-76
+77
 00:03:42,700 --> 00:03:47,620
 Alors Montricoux, c'est mont rugeux, mont âpre, puisque nous sommes ici sur un mont.
 
-77
+78
 00:03:48,300 --> 00:03:52,640
 C'était certainement difficile d'y grimper à l'époque ou d'y venir.
 
-78
+79
 00:03:53,180 --> 00:03:55,200
 le mont dur.
 
-79
+80
 00:03:56,000 --> 00:03:57,180
 Chaque fois que je me promène dans le village,
 
-80
+81
 00:03:58,330 --> 00:03:58,940
 tout me parle :
 
-81
+82
 00:03:59,330 --> 00:04:00,340
 Les murs, les rues,
 
-82
+83
 00:04:01,680 --> 00:04:02,360
 tout !
