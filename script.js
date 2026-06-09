@@ -556,6 +556,7 @@ map.on('load',async()=>{
 
       // OPEN PLAYER
       playerPanel.classList.add('active')
+      playerPanel.classList.remove('collapsed')
 
       // RESET ALL MARKERS
       document
@@ -629,8 +630,10 @@ map.on('load',async()=>{
 
       }
 
-      playerTitle.textContent =
-      t('title')
+      playerTitle.textContent = t('title')
+      document.getElementById(
+        'mini-title'
+      ).textContent = t('title')
 
       playerDescription.textContent =
       t('description')
@@ -660,15 +663,27 @@ map.on('load',async()=>{
 
   })
 
+  document
+  .getElementById('mini-player')
+  .addEventListener('click',()=>{
+
+    playerPanel.classList.remove(
+      'collapsed'
+    )
+
+  })
 
   // ========================================
   // MAP CLICK
   // ========================================
 
   map.on('click',()=>{
-
-    playerPanel.classList.remove('active')
-
+    if(!audio.paused){
+      playerPanel.classList.add('collapsed')
+    }
+    else{
+      playerPanel.classList.remove('active')
+    }
   })
 
   // ========================================
