@@ -21,7 +21,7 @@ mapboxgl.accessToken =
 
 const map = new mapboxgl.Map({
   container:'map',
-  style:'mapbox://styles/saralgc/cmq5blqjy007z01r2ehghfwol',
+  style:'mapbox://styles/saralgc/cmqe9d043002u01qw2nxad9dh',
   pitchWithRotate:false,
   dragRotate:false,
   renderWorldCopies:false,
