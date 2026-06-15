@@ -451,6 +451,7 @@ map.on('load',async()=>{
         ['*',['get','scale'],4]
       ],
       'icon-rotate':['get','rotation'],
+      'icon-rotation-alignment':'map',
       'icon-allow-overlap':true,
       'icon-ignore-placement':true
     }
@@ -482,6 +483,7 @@ map.on('load',async()=>{
         ['*',['get','scale'],3]
       ],
       'icon-rotate':['get','rotation'],
+      'icon-rotation-alignment':'map',
       'icon-allow-overlap':true,
       'icon-ignore-placement':true
     }
