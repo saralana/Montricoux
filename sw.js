@@ -1,5 +1,5 @@
 const CACHE_NAME =
-'montricoux-v20250614'
+'montricoux-v20250712_2'
 
 const urlsToCache = [
 
@@ -165,10 +165,18 @@ self.addEventListener(
   }
 )
 
+/*
 self.addEventListener(
   'fetch',
   event => {
-
+    console.log(
+      '[SW]',
+      event.request.destination || '(none)',
+      'Range:',
+      event.request.headers.get('range'),
+      event.request.url
+    )
+  
     event.respondWith(
 
       caches.match(event.request)
@@ -198,4 +206,99 @@ self.addEventListener(
     )
 
   }
-)
+)*/
+
+self.addEventListener('fetch', event => {
+
+  const request = event.request
+
+  // ========================================
+  // RANGE REQUESTS (Chrome audio offline)
+  // ========================================
+
+  if(request.headers.has('range')){
+
+    event.respondWith(handleRangeRequest(request))
+    return
+
+  }
+
+  // ========================================
+  // DEFAULT CACHE
+  // ========================================
+
+  event.respondWith(
+
+    caches.match(request)
+
+    .then(response => {
+
+      if(response){
+        return response
+      }
+
+      return fetch(request)
+
+    })
+
+  )
+
+})
+
+
+async function handleRangeRequest(request){
+
+  const cache = await caches.open(CACHE_NAME)
+
+  let response = await cache.match(request.url)
+
+  if(!response){
+
+    response = await fetch(request)
+
+  }
+
+  const buffer = await response.arrayBuffer()
+
+  const range = request.headers.get('range')
+
+  const bytesPrefix = 'bytes='
+
+  const rangeValue =
+  range.substring(bytesPrefix.length)
+
+  const start =
+  Number(rangeValue.split('-')[0])
+
+  const end =
+  buffer.byteLength - 1
+
+  return new Response(
+
+    buffer.slice(start,end+1),
+
+    {
+
+      status:206,
+
+      statusText:'Partial Content',
+
+      headers:{
+
+        'Content-Type':'audio/mpeg',
+
+        'Content-Length':
+        end-start+1,
+
+        'Content-Range':
+        `bytes ${start}-${end}/${buffer.byteLength}`,
+
+        'Accept-Ranges':'bytes'
+
+      }
+
+    }
+
+  )
+
+}

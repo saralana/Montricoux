@@ -1,6 +1,6 @@
 1
 00:00:01,900 --> 00:00:03,940
-On rentre? C'est parti ! Bienvenue !
+On rentre ? C'est parti ! Bienvenue !
 
 2
 00:00:09,680 --> 00:00:12,620

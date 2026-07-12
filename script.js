@@ -1,4 +1,8 @@
-console.log('SCRIPT NOVO 17:50')
+console.log('SCRIPT NOVO 08:07')
+
+const splash =
+document.getElementById('splash')
+
 const sidebar =
 document.getElementById('sidebar')
 
@@ -27,6 +31,11 @@ const map = new mapboxgl.Map({
   renderWorldCopies:false,
   maxZoom:20
 })
+
+map.dragRotate.disable()
+map.touchZoomRotate.disableRotation()
+map.touchPitch.disable()
+map.setPitch(0)
 
 const bounds = [
   [1.612606,44.070790],
@@ -58,6 +67,14 @@ map.once('idle',()=>{
     zoom,
     duration:0
   })
+
+  if(vw < 1024){
+    geolocate.trigger()
+  }
+  
+  setTimeout(()=>{
+    splash.classList.add('hide')
+  },500)
 
 })
 
@@ -217,8 +234,21 @@ function updateMarkerScale(){
     ? parseFloat(marker.dataset.offsetY || 0)
     : 0
 
-    marker.style.transform =
-    `translate(${offsetX}px, ${offsetY}px) scale(${finalScale})`
+    const bearing = map.getBearing()
+
+    if(useImages){
+
+      marker.style.transform =
+      // `translate(${offsetX}px, ${offsetY}px) rotate(${bearing}deg) scale(${finalScale})`
+      `translate(${offsetX}px, ${offsetY}px) scale(${finalScale})`
+    }
+    else{
+
+      marker.style.transform =
+      `translate(${offsetX}px, ${offsetY}px)
+      scale(${finalScale})`
+
+    }
   })
 }
 
@@ -233,7 +263,7 @@ const decorations = [
     image:'pont',
     lng:1.6169,
     lat:44.07328,
-    zoom:17,
+    zoom:16,
     scale:0.12,
     rotation:0
   },
@@ -243,7 +273,7 @@ const decorations = [
     image:'moulin',
     lng:1.61858,
     lat:44.0736,
-    zoom:17,
+    zoom:16,
     scale:0.2,
     rotation:0
   },
@@ -303,7 +333,7 @@ const decorations = [
     image:'rueDeLAqueduc',
     lng:1.619076,
     lat:44.07505,
-    zoom:18.1,
+    zoom:18,
     scale:0.17,
     rotation:95
   },
@@ -313,7 +343,7 @@ const decorations = [
     image:'rueDeLaResistence',
     lng:1.61874,
     lat:44.0751,
-    zoom:18.1,
+    zoom:18,
     scale:0.17,
     rotation:93
   },
@@ -323,7 +353,7 @@ const decorations = [
     image:'rueSaintAntoine',
     lng:1.6187,
     lat:44.0756,
-    zoom:18.1,
+    zoom:18,
     scale:0.17,
     rotation:43
   },
@@ -333,7 +363,7 @@ const decorations = [
     image:'rueSaintEutrope',
     lng:1.61891,
     lat:44.0756,
-    zoom:18.1,
+    zoom:18,
     scale:0.17,
     rotation:44
   },
@@ -343,7 +373,7 @@ const decorations = [
     image:'rueDesRemparts',
     lng:1.61993,
     lat:44.075,
-    zoom:18.1,
+    zoom:18,
     scale:0.27,
     rotation:110
   },
@@ -353,7 +383,7 @@ const decorations = [
     image:'rueDesTempliers',
     lng:1.61859,
     lat:44.075735,
-    zoom:18.1,
+    zoom:18,
     scale:0.15,
     rotation:-20
   }
@@ -368,6 +398,8 @@ map.on('load',async()=>{
 
   console.log('MAP LOADED')
 
+  const vw = window.innerWidth
+  
   // ========================================
   // LOAD DECORATION IMAGES
   // ========================================
@@ -692,7 +724,7 @@ map.on('load',async()=>{
   // ZOOM
   // ========================================
 
-  map.on('zoom',updateMarkerScale)
+  map.on('move',updateMarkerScale)
 
 })
 
@@ -770,3 +802,38 @@ if('serviceWorker' in navigator){
   )
 
 }
+
+
+// ========================================
+// SIDEBAR
+// ========================================
+
+
+
+const tabs =
+document.querySelectorAll('.sidebar-tab')
+
+const pages =
+document.querySelectorAll('.sidebar-page')
+
+tabs.forEach(tab=>{
+
+    tab.addEventListener('click',()=>{
+
+        tabs.forEach(t=>
+            t.classList.remove('active')
+        )
+
+        pages.forEach(p=>
+            p.classList.remove('active')
+        )
+
+        tab.classList.add('active')
+
+        document
+        .getElementById(tab.dataset.tab)
+        .classList.add('active')
+
+    })
+
+})

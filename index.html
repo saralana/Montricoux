@@ -17,6 +17,17 @@
 
 
 <body>
+  
+  <div id="splash">
+    <div class="splash-logo"></div>
+    <div class="loader"></div>
+    <p class="splash-text">
+        Chargement de la carte...
+    </p>
+    <p class="splash-small">
+        Pour profiter pleinement du parcours,<br> autorisez la géolocalisation sur votre appareil.
+    </p>
+  </div>
 
   <!-- MAP -->
   <div id="map"></div>
@@ -42,16 +53,72 @@
   <div class="sidebar-content">
 
     <!-- INTRO -->
+    <p class="sidebar-subtitle">À la mémoire d'André Lacombe</p>
+    <div class="sidebar-tabs">
+
+        <button class="sidebar-tab active" data-tab="intro">
+            À Propos
+        </button>
+
+        <button class="sidebar-tab" data-tab="credits">
+            Crédits
+        </button>
+
+        <button class="sidebar-tab" data-tab="contact">
+            Contact
+        </button>
+
+    </div>
     <p class="sidebar-intro">
-        Ce parcours vous propose de découvrir le village de Montricoux et son patrimoine artistique et architectural. Au fil d’un récit
-        incarné par des habitants, des artistes et des acteurs culturels, laissez-vous guider dans les rues de ce village médiéval.
-        Chargez la cartographie au format numérique en flashant le QR code à la station A (La bascule) et déplacez-vous dans le
-        village à la rencontre des capsules sonores accessibles d’un clic.
-        <br><br>
-        <b>Distance </b>: env. 2 km
-        <br>
-        <b>Durée </b>: env. 1/2h de marche, 1h avec les points d’écoute
+
     </p>
+
+    <div class="sidebar-pages">
+
+        <div class="sidebar-page active" id="intro">
+
+            Ce parcours vous propose de découvrir le village de Montricoux et son patrimoine artistique et architectural. Au fil d’un récit
+            incarné par des habitants, des artistes et des acteurs culturels, laissez-vous guider dans les rues de ce village médiéval.
+            Chargez la cartographie au format numérique en flashant le QR code à la station A (La bascule) et déplacez-vous dans le
+            village à la rencontre des capsules sonores accessibles d’un clic.
+            <br><br>
+            <b>Distance </b>: env. 2 km
+            <br>
+            <b>Durée </b>: env. 1/2h de marche, 1h avec les points d’écoute
+
+        </div>
+
+        <div class="sidebar-page" id="credits">
+            <b>Avec les témoignages de:</b><br>
+            <p>Aquilino Torrao</p>
+            <p>Astrid Torrao</p>
+            <p>Diego Lara</p>
+            <p>Isabelle Fléouter</p>
+            <p>Isabelle Van Mastrigt</p>
+            <p>Jean-Claude Herraïz</p>
+            <p>Léa Gérardin-Macario</p>
+            <p>Marie Ange Namy</p>
+            <p>Michel Jannin</p>
+            <p>RV Larbre</p>
+            <p>Thierry Faucher</p><br>
+            <b>Équipe:</b><br>
+            <p>Maitrise d’ouvrage : Mairie de Montricoux avec l’appui technique de l’équipe du PETR du Pays Midi-Quercy</p>
+            <p>Muséographie : Camille Provendier</p>
+            <p>Capsules sonores : David Lagarde</p>
+            <p>Conception graphique et illustrations : Lucie Sahuquet</p>
+            <p>Développement web : Sara Lana</p>
+            <b>Avec le soutien de</b><br>
+            LOGOS
+
+        </div>
+
+        <div class="sidebar-page" id="contact">
+            <p>Pour toute information complémentaire, veuillez contacter la mairie de Montricoux.</p><br><br>
+            <b>email: </b> mairie-montricoux@info82.com<br><br>
+            <b>telephone: </b> 05 63 67 20 60<br>
+        </div>
+
+</div>
 
     <!-- LINKS -->
     <div class="sidebar-links">

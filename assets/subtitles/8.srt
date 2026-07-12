@@ -1,6 +1,6 @@
 1
 00:00:00,740 --> 00:00:04,660
-Donc là, c'est la tour de Rempart qui est la plus grande hauteur.
+Donc là, c'est la tour de rempart qui a la plus grande hauteur.
 
 2
 00:00:05,140 --> 00:00:06,260
@@ -8,7 +8,7 @@ Et la mairie m'a demandé conseil.
 
 3
 00:00:06,620 --> 00:00:08,920
-Quoi faire? En fait, on a une tour médiévale
+Quoi faire ? En fait, on a une tour médiévale
 
 4
 00:00:10,320 --> 00:00:12,600
@@ -128,7 +128,7 @@ On l'a restauré.
 
 33
 00:02:00,120 --> 00:02:02,420
-Mais on donne une autre vision en plus.
+Mais on donne notre vision en plus.
 
 34
 00:02:03,380 --> 00:02:08,940

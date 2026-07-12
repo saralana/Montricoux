@@ -18,6 +18,92 @@ body {
   font-family:'Source Sans 3',sans-serif;
   background:var(--beige);
 }
+
+/* ========================================
+SPLASH
+======================================== */
+
+#splash{
+    position:fixed;
+    inset:0;
+
+    z-index:99999;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:24px;
+
+    background:var(--beige);
+
+    transition:
+        opacity .5s ease,
+        visibility .5s ease;
+}
+
+#splash.hide{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+}
+
+.splash-logo{
+
+    width:min(260px,55vw);
+    aspect-ratio:2048/633;
+
+    background:var(--marron);
+
+    -webkit-mask-image:url("assets/logo.png");
+    -webkit-mask-repeat:no-repeat;
+    -webkit-mask-position:center;
+    -webkit-mask-size:contain;
+
+    mask-image:url("assets/logo.png");
+    mask-repeat:no-repeat;
+    mask-position:center;
+    mask-size:contain;
+}
+
+.loader{
+    width:80px;
+    height:2px;
+    background:rgba(114,68,58,.2);
+    position:relative;
+    overflow:hidden;
+}
+
+.loader::after{
+    content:"";
+    position:absolute;
+    left:-35%;
+    width:35%;
+    height:100%;
+    background:var(--marron);
+    animation:loading 1.2s infinite;
+}
+
+@keyframes loading{
+    from{left:-35%;}
+    to{left:100%;}
+}
+
+.splash-text{
+    color:var(--marron);
+    font-size:1rem;
+    font-weight:600;
+}
+
+.splash-small{
+    width:min(420px,82vw);
+    text-align:center;
+    color:var(--marron);
+    opacity:.7;
+    font-size:.9rem;
+    line-height:1.5;
+}
+
 /* ========================================
 TYPOGRAPHY
 ======================================== */
@@ -231,7 +317,7 @@ display:none;
 /* MARKERS */
 
 .marker{
-  transition:.1s;
+  transition:.03s;
 }
 
 .marker-icon{
@@ -473,7 +559,7 @@ z-index:1000;
 /* SUBTITLES */
 .subtitle{
     width:100%;
-    height:35px;
+    height:70px;
 
     display:flex;
     align-items:center;
@@ -604,7 +690,8 @@ z-index:1000;
 
   .subtitle{
     width:100%;
-
+    height: auto;
+    min-height: 80px;
     padding:0;
     margin:0 auto;
 
@@ -716,7 +803,7 @@ SIDEBAR
   min-width: 400px;
   height: 100vh;
   z-index: 900;
-  padding: 2vw;
+  padding: 3vw;
   overflow-y: auto;
   color: var(--marron);
   transform: translateX(-100%);
@@ -738,8 +825,15 @@ SIDEBAR
   margin-bottom: 2vw;
 }
 
+.sidebar-subtitle{
+  width: 100%;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 3vw;
+}
+
 .sidebar-content {
-  padding-top: 20vh;
+  padding-top: 8vh;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -825,6 +919,46 @@ SIDEBAR
   font-weight: 800;
 }
 
+.sidebar-tabs{
+    display:flex;
+    border-top:1px solid rgba(114,68,58,.2);
+    border-bottom:1px solid rgba(114,68,58,.2);
+    margin-bottom:3rem;
+}
+
+.sidebar-tab{
+    flex:1;
+    background:none;
+    border:none;
+    padding:20px 0;
+    cursor:pointer;
+    color:var(--marron);
+    opacity:.35;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    transition:.25s;
+    font-family: 'Source Sans 3', sans-serif !important;
+}
+
+.sidebar-tab.active{
+    opacity:1;
+}
+.sidebar-tab.active{
+    color:var(--marron);
+}
+
+.sidebar-tab{
+    color:var(--marron);
+}
+.sidebar-page{
+    display:none;
+}
+.sidebar-page.active{
+    display:block;
+}
+
 #close-sidebar {
   position: absolute;
   top: 40px;
@@ -882,6 +1016,12 @@ SIDEBAR
     font-size: 48px;
     margin-bottom: 40px;
   }
+  .sidebar-subtitle{
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 2vw 2vw 6vw 2vw;
+  }
   .sidebar-intro {
     font-size: 16px !important;
     max-width: 80vw;
@@ -900,7 +1040,9 @@ SIDEBAR
 @media (max-width: 768px) {
   #sidebar {
     width: 100vw;
+    padding: 0 !important;
     background-color: var(--beige);
+    min-width: 200px;
   }
 }
 
@@ -1021,6 +1163,20 @@ background-image:url("assets/ui/zoom_out.svg")!important;
   }
 }
 
+/* Procurando posição */
+.mapboxgl-ctrl-geolocate.mapboxgl-ctrl-geolocate-waiting{
+  animation:geolocateSpin 1.2s linear infinite !important;
+}
+
+/* Seguindo a posição */
+.mapboxgl-ctrl-geolocate.mapboxgl-ctrl-geolocate-active{
+  box-shadow:0 0 12px rgba(9,144,128,.45) !important;
+}
+
+/* Erro */
+.mapboxgl-ctrl-geolocate.mapboxgl-ctrl-geolocate-active-error{
+  opacity:.5 !important;
+}
 
 .mapboxgl-user-location-dot, .mapboxgl-user-location-dot:before {
     background-color: #099080 !important;
@@ -1030,6 +1186,10 @@ background-image:url("assets/ui/zoom_out.svg")!important;
 }
 .mapboxgl-user-location-show-heading .mapboxgl-user-location-heading:after, .mapboxgl-user-location-show-heading .mapboxgl-user-location-heading:before {
     border-bottom: 7.5px solid #099080;
+}
+
+.mapboxgl-user-location-accuracy-circle{
+    pointer-events:none !important;
 }
 
 /* ========================================

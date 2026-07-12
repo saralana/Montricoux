@@ -186,9 +186,16 @@ updateVolumeTrack();
 
 async function loadTrack(data) {
 
+  console.log('LOAD TRACK', data.audio)
   // AUDIO
   audio.src = data.audio
   audio.load()
+
+  audio.addEventListener('loadstart', () => console.log('loadstart'))
+  audio.addEventListener('loadedmetadata', () => console.log('loadedmetadata'))
+  audio.addEventListener('canplay', () => console.log('canplay'))
+  audio.addEventListener('canplaythrough', () => console.log('canplaythrough'))
+  audio.addEventListener('error', e => console.log('audio error', audio.error))
 
   // RESET SUBTITLE
   subtitleEl.textContent = ''
