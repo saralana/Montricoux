@@ -13,24 +13,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
- </head>
+  </head>
 
 
 <body>
-  
   <div id="splash">
     <div class="splash-logo"></div>
     <div class="loader"></div>
     <p class="splash-text">
-        Loading the map...
+        Chargement de la carte...
     </p>
-
     <p class="splash-small">
-        To make the most of the tour,<br>
-        please enable location services on your device.
+        Pour profiter pleinement du parcours,<br> autorisez la géolocalisation sur votre appareil.
     </p>
   </div>
-
+  
   <!-- MAP -->
   <div id="map"></div>
 
@@ -54,93 +51,43 @@
   <!-- CONTENT -->
   <div class="sidebar-content">
 
-   <!-- INTRO -->
-    <p class="sidebar-subtitle">In memory of André Lacombe</p>
+    <!-- INTRO -->
+    <p class="sidebar-intro">
+        This route invites you to discover the village of Montricoux and its artistic and architectural heritage. Through stories told by residents, artists, and cultural actors, let yourself be guided through the streets of this medieval village.
+        Load the digital map by scanning the QR code at Station A (La Bascule) and move through the village to discover the audio capsules accessible with a single click.
+        <br><br>
+        <b>Distance</b>: approx. 2 km
+        <br>
+        <b>Duration</b>: approx. 30 min walk, 1 hour including listening points
+    </p>
 
-    <div class="sidebar-tabs">
+    <!-- LINKS -->
+    <div class="sidebar-links">
 
-        <button class="sidebar-tab active" data-tab="intro">
-            About
-        </button>
 
-        <button class="sidebar-tab" data-tab="credits">
-            Credits
-        </button>
-
-        <button class="sidebar-tab" data-tab="contact">
-            Contact
-        </button>
-
+    <!-- FICHE TECHNIQUE -->
+        <div class="accordion">
+            <button class="accordion-button">
+            Crédits
+            <span>+</span>
+            </button>
+            <div class="accordion-content">
+                <p>
+                
+                </p>
+            </div>
+        </div>
     </div>
 
-    <div class="sidebar-pages">
+    <!-- FOOTER -->
+    <div class="sidebar-footer">
 
-        <div class="sidebar-page active" id="intro">
-
-            This route invites you to discover the village of Montricoux and its artistic and architectural heritage. Through stories told by residents, artists, and cultural actors, let yourself be guided through the streets of this medieval village. Load the digital map by scanning the QR code at Station A (La Bascule) and move through the village to discover the audio capsules accessible with a single click.
-            <br><br>
-            <b>A WALK IN MEMORY OF ANDRÉ LACOMBE</b><br>
-            The municipality of Montricoux wishes to dedicate this walk to André Lacombe, who passed away in 2023. He was keen to share his passion for his village and its history. 
-            <br><br>
-            <b>Distance:</b> approx. 2 km
-            <br>
-            <b>Duration:</b> approx. 30 min walk, 1 hour including listening stops
-            <br>
-        </div>
-
-        <div class="sidebar-page" id="credits">
-
-            <b>Featuring the voices of:</b><br>
-
-            <p>Aquilino Torrao</p>
-            <p>Astrid Torrao</p>
-            <p>Diego Lara</p>
-            <p>Isabelle Fléouter</p>
-            <p>Isabelle Van Mastrigt</p>
-            <p>Jean-Claude Herraïz</p>
-            <p>Léa Gérardin-Macario</p>
-            <p>Marie Ange Namy</p>
-            <p>Michel Jannin</p>
-            <p>RV Larbre</p>
-            <p>Thierry Faucher</p>
-
-            <br>
-
-            <b>Project team:</b><br>
-
-            <p>Project owner: Municipality of Montricoux, with technical support from the PETR Pays Midi-Quercy team.</p>
-
-            <p>Museography: Camille Provendier</p>
-
-            <p>Audio production: David Lagarde</p>
-
-            <p>Graphic design & illustrations: Lucie Sahuquet</p>
-
-            <p>Web development: Sara Lana</p>
-
-            <br>
-
-            <b>Supported by</b><br>
-
-            LOGOS
-
-        </div>
-
-        <div class="sidebar-page" id="contact">
-
-            <p>For further information, please contact the Montricoux Town Hall.</p>
-
-            <br><br>
-
-            <b>Email:</b> mairie-montricoux@info82.com
-
-            <br><br>
-
-            <b>Telephone:</b> +33 (0)5 63 67 20 60
-
-            <br>
-
-        </div>
+      <!-- LOGOS 
+      <div class="sidebar-logos">
+        <img src="assets/logo-acx.png">
+        <img src="assets/logo-ufpr.png">
+        <img src="assets/logo-cnpq.png">
+      </div>-->
 
     </div>
   </div>
@@ -212,32 +159,20 @@
                 <div id="subtitle" class="subtitle"></div>
             </div>
         </div>
-
-
-        <div id="mini-player">
-            <button id="mini-play">
-                <img
-                id="mini-play-icon"
-                src="assets/ui/pause.svg"
-                alt=""
-                >
-            </button>
-            <span id="mini-title"></span>
-        </div>
+        
     </div>
  </div>
 
     <div class="language-switcher">
 
-        <button
+    <button
         class="lang-button lang-fr"
         onclick="window.location.href='index.html'">
-        </button>
+    </button>
 
-        <div class="lang-active lang-en"></div>
+    <div class="lang-active lang-en"></div>
 
     </div>
-
   <!-- MAPBOX -->
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
 

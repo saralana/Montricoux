@@ -1040,7 +1040,7 @@ SIDEBAR
 @media (max-width: 768px) {
   #sidebar {
     width: 100vw;
-    padding: 0 !important;
+    padding: 3vh !important;
     background-color: var(--beige);
     min-width: 200px;
   }
