@@ -1,5 +1,5 @@
 const CACHE_NAME =
-'montricoux-v20250712_2'
+'montricoux-v20260713'
 
 const urlsToCache = [
 
