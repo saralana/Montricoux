@@ -292,7 +292,7 @@ const decorations = [
     id:'grand-rue',
     image:'grand-rue',
     lng:1.61898,
-    lat:44.07542,
+    lat:44.0755,
     group:'street',
     scale:0.14,
     rotation:-35
@@ -301,8 +301,8 @@ const decorations = [
   {
     id:'grand-rue-2',
     image:'grand-rue-2',
-    lng:1.618,
-    lat:44.075128,
+    lng:1.6179,
+    lat:44.07522,
     group:'street',
     scale:0.14,
     rotation:-5
@@ -311,8 +311,8 @@ const decorations = [
   {
     id:'PlaceMarcelLenoir',
     image:'PlaceMarcelLenoir',
-    lng:1.6179,
-    lat:44.07532,
+    lng:1.6178,
+    lat:44.0754,
     group:'street',
     scale:0.15,
     rotation:0
@@ -322,7 +322,7 @@ const decorations = [
     id:'PlaceNationale',
     image:'PlaceNationale',
     lng:1.6188,
-    lat:44.07526,
+    lat:44.07538,
     group:'street',
     scale:0.1,
     rotation:-18
@@ -331,27 +331,27 @@ const decorations = [
   {
     id:'PlaceNeuve',
     image:'PlaceNeuve',
-    lng:1.61915,
-    lat:44.07485,
+    lng:1.61918,
+    lat:44.07493,
     group:'street',
-    scale:0.18,
+    scale:0.23,
     rotation:0
   },
 
   {
     id:'rueDeLAqueduc',
     image:'rueDeLAqueduc',
-    lng:1.619076,
-    lat:44.07505,
+    lng:1.61943,
+    lat:44.07545,
     group:'street',
     scale:0.17,
-    rotation:95
+    rotation:75
   },
 
   {
     id:'rueDeLaResistence',
     image:'rueDeLaResistence',
-    lng:1.61874,
+    lng:1.61872,
     lat:44.0751,
     group:'street',
     scale:0.17,
@@ -361,8 +361,8 @@ const decorations = [
   {
     id:'rueSaintAntoine',
     image:'rueSaintAntoine',
-    lng:1.6187,
-    lat:44.0756,
+    lng:1.61879,
+    lat:44.07563,
     group:'street',
     scale:0.17,
     rotation:43
@@ -372,7 +372,7 @@ const decorations = [
     id:'rueSaintEutrope',
     image:'rueSaintEutrope',
     lng:1.61891,
-    lat:44.0756,
+    lat:44.07568,
     group:'street',
     scale:0.17,
     rotation:44
@@ -382,17 +382,17 @@ const decorations = [
     id:'rueDesRemparts',
     image:'rueDesRemparts',
     lng:1.61993,
-    lat:44.075,
+    lat:44.0749,
     group:'street',
     scale:0.27,
-    rotation:110
+    rotation:125
   },
 
   {
     id:'rueDesTempliers',
     image:'rueDesTempliers',
-    lng:1.61859,
-    lat:44.075735,
+    lng:1.61901,
+    lat:44.07595,
     group:'street',
     scale:0.15,
     rotation:-20
