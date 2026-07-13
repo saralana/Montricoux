@@ -337,7 +337,7 @@ display:none;
     background-repeat:no-repeat;
     background-position:center;
     transform-origin:center bottom;
-    will-change:transform;
+
     /* filter:drop-shadow(0 0 14px var(--marron)); */
 }
 

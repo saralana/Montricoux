@@ -25,7 +25,7 @@ mapboxgl.accessToken =
 
 const map = new mapboxgl.Map({
   container:'map',
-  style:'mapbox://styles/saralgc/cmqe9d043002u01qw2nxad9dh',
+  style:'mapbox://styles/saralgc/cmrihbbju007r01qr67ikhdq8',
   pitchWithRotate:false,
   dragRotate:false,
   renderWorldCopies:false,
@@ -263,7 +263,7 @@ const decorations = [
     image:'pont',
     lng:1.6169,
     lat:44.07328,
-    zoom:16,
+    group:'building',
     scale:0.12,
     rotation:0
   },
@@ -273,7 +273,17 @@ const decorations = [
     image:'moulin',
     lng:1.61858,
     lat:44.0736,
-    zoom:16,
+    group:'building',
+    scale:0.2,
+    rotation:0
+  },
+
+   {
+    id:'briquetterie',
+    image:'briquetterie',
+    lng:1.61475, 
+    lat:44.07225,
+    group:'building',
     scale:0.2,
     rotation:0
   },
@@ -283,7 +293,7 @@ const decorations = [
     image:'grand-rue',
     lng:1.61898,
     lat:44.07542,
-    zoom:18,
+    group:'street',
     scale:0.14,
     rotation:-35
   },
@@ -293,7 +303,7 @@ const decorations = [
     image:'grand-rue-2',
     lng:1.618,
     lat:44.075128,
-    zoom:18,
+    group:'street',
     scale:0.14,
     rotation:-5
   },
@@ -303,7 +313,7 @@ const decorations = [
     image:'PlaceMarcelLenoir',
     lng:1.6179,
     lat:44.07532,
-    zoom:18,
+    group:'street',
     scale:0.15,
     rotation:0
   },
@@ -313,8 +323,8 @@ const decorations = [
     image:'PlaceNationale',
     lng:1.6188,
     lat:44.07526,
-    zoom:18,
-    scale:0.3,
+    group:'street',
+    scale:0.1,
     rotation:-18
   },
 
@@ -323,7 +333,7 @@ const decorations = [
     image:'PlaceNeuve',
     lng:1.61915,
     lat:44.07485,
-    zoom:18,
+    group:'street',
     scale:0.18,
     rotation:0
   },
@@ -333,7 +343,7 @@ const decorations = [
     image:'rueDeLAqueduc',
     lng:1.619076,
     lat:44.07505,
-    zoom:18,
+    group:'street',
     scale:0.17,
     rotation:95
   },
@@ -343,7 +353,7 @@ const decorations = [
     image:'rueDeLaResistence',
     lng:1.61874,
     lat:44.0751,
-    zoom:18,
+    group:'street',
     scale:0.17,
     rotation:93
   },
@@ -353,7 +363,7 @@ const decorations = [
     image:'rueSaintAntoine',
     lng:1.6187,
     lat:44.0756,
-    zoom:18,
+    group:'street',
     scale:0.17,
     rotation:43
   },
@@ -363,7 +373,7 @@ const decorations = [
     image:'rueSaintEutrope',
     lng:1.61891,
     lat:44.0756,
-    zoom:18,
+    group:'street',
     scale:0.17,
     rotation:44
   },
@@ -373,7 +383,7 @@ const decorations = [
     image:'rueDesRemparts',
     lng:1.61993,
     lat:44.075,
-    zoom:18,
+    group:'street',
     scale:0.27,
     rotation:110
   },
@@ -383,7 +393,7 @@ const decorations = [
     image:'rueDesTempliers',
     lng:1.61859,
     lat:44.075735,
-    zoom:18,
+    group:'street',
     scale:0.15,
     rotation:-20
   }
@@ -431,10 +441,10 @@ map.on('load',async()=>{
     decorations.map(item=>({
       type:'Feature',
       properties:{
-        image:item.image,
-        scale:item.scale,
-        rotation:item.rotation,
-        zoom:item.zoom
+          image:item.image,
+          scale:item.scale,
+          rotation:item.rotation,
+          group:item.group
       },
       geometry:{
         type:'Point',
@@ -465,11 +475,11 @@ map.on('load',async()=>{
     id:'decorations-buildings',
     type:'symbol',
     source:'decorations',
-    minzoom:18.1,
+    minzoom:17,
     filter:[
-      '<',
-      ['get','zoom'],
-      18.1
+        '==',
+        ['get','group'],
+        'building'
     ],
     layout:{
       'icon-image':['get','image'],
@@ -492,16 +502,16 @@ map.on('load',async()=>{
   // ========================================
   // STREETS
   // ========================================
-
+  console.log("ANTES STREETS");
   map.addLayer({
     id:'decorations-streets',
     type:'symbol',
     source:'decorations',
-    minzoom:19,
+    minzoom:18.5,
     filter:[
-      '>=',
-      ['get','zoom'],
-      18.1
+        '==',
+        ['get','group'],
+        'street'
     ],
     layout:{
       'icon-image':['get','image'],
@@ -520,6 +530,7 @@ map.on('load',async()=>{
       'icon-ignore-placement':true
     }
   })
+    console.log("DEPOIS STREETS");
 
   const response =
   await fetch('data/pontos.geojson')
@@ -534,6 +545,9 @@ map.on('load',async()=>{
 
     const props =
     feature.properties
+
+    const isBriqueterie =
+    props.id === 10;
 
     // ========================================
     // CREATE HTML MARKER
@@ -554,8 +568,8 @@ map.on('load',async()=>{
     `url(${props.icon})`
 
     inner.dataset.icon = props.icon
-
     inner.dataset.image = props.image
+    
     inner.dataset.offsetX =
     props.offsetX || 0
     inner.dataset.offsetY =
@@ -614,12 +628,16 @@ map.on('load',async()=>{
           zoom = 20
       }
 
+      //check if feature is the copy of briqueterie
+      const flyCoords =
+      props.flyTo || feature.geometry.coordinates;
+
       map.flyTo({
-        center:feature.geometry.coordinates,
+        center: flyCoords,
         zoom,
         duration:2000,
         essential:true
-      })
+      });
 
       // AFTER ZOOM FINISH
 
